@@ -1,0 +1,50 @@
+@import '../../../custom_variables';
+
+.navbar {
+    border-radius: 0;
+    transition: opacity 0.3s ease-out;
+    background:transparent;
+   
+
+  }
+
+  .navbar:after {
+    content: "";
+    width: 110%;
+    height:100%;
+    @include horizontal-gradient();
+    z-index:-1;
+    opacity:0;
+    position: absolute;
+    display: inline-block;
+    left:0;
+    transition: opacity 0.3s ease-out;
+}
+
+
+  
+  
+  .affix {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  
+  /* fixed to top styles */
+  .affix.navbar:after {
+    transition: opacity 0.3s ease-out;
+    opacity:1;
+ 
+  }
+
+
+
+  .affix.navbar {
+    @include boxShadow();
+  }
+  .affix.navbar .nav-item>a, 
+  .affix.navbar .navbar-brand {
+      color: #fff;
+  }

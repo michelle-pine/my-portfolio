@@ -10,7 +10,8 @@ import { AboutPageComponent } from './components/about-page/about-page.component
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     ContactPageComponent,
     NotFoundComponent,
     SingleProjectComponent,
-    SidebarComponent
+    HeaderComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
-$font-stack: 'Raleway',
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+$font-stack: 'Roboto',
 Helvetica,
 Arial,
 sans serif;
-$accent1: #00d2ff;
-$accent2: #3a7bd5;
-$text-color: #fff;
-$bg: rgb(22, 22, 22);
+$accent1: #fa8100;
+$accent2: #ffbe18;
+$text-color: #333;
+$bg: #fff;
 @mixin basic-settings() {
     font-family: $font-stack;
     background: $bg;

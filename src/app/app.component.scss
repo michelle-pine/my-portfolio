@@ -1,11 +1,10 @@
-.sticky-wrapper {
-    position:fixed;
+main {
     width:100vw;
-    height:100vh;
+
+
+    min-height:100vh;
 }
 
-
-.scrollable {
-    overflow:auto;
-
+.container-fluid {
+    margin-top:60px;
 }

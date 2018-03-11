@@ -1,9 +1,10 @@
 @import 'custom_variables';
 
 body {
-    font-family: $font-stack;
+    font-family: $font-stack!important;
     background: $bg;
     color: $text-color;
+    font-weight:300;
 }
 
 a {
@@ -14,4 +15,15 @@ a:hover {
     color: $accent2;
     text-decoration:none;
     @include transitions();
+}
+
+
+
+::-webkit-scrollbar-track {
+    @include vertical-gradient();
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $bg;
 }
