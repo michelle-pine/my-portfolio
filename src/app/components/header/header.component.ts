@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-declare var jquery:any;
-declare var $ :any;
+declare var jquery: any;
+declare var $: any;
 
 @Component({
   selector: 'app-header',
@@ -12,10 +12,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $("#down").click(function() {
+    $("#down").click(function () {
       $('html, body').animate({
-          scrollTop: $("#main").offset().top
+        scrollTop: $("#main").offset().top
       }, 600);
-  });
+    });
+  }
 
 }

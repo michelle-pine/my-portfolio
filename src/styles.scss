@@ -5,6 +5,9 @@ body {
     background: $bg;
     color: $text-color;
     font-weight:300;
+    width:100vw;
+    height:100%;
+    overflow-x:hidden;
 }
 
 a {

@@ -3,7 +3,17 @@
 .navbar {
     border-radius: 0;
     transition: opacity 0.3s ease-out;
-    background:transparent;
+    background:white;
+    @include boxShadow();
+    
+    a {
+        color:$accent1;
+
+    }
+
+    a:hover {
+        color:$accent2;
+    }
    
 
   }
@@ -44,7 +54,13 @@
   .affix.navbar {
     @include boxShadow();
   }
+
   .affix.navbar .nav-item>a, 
   .affix.navbar .navbar-brand {
       color: #fff;
+  }
+
+  .navbar-brand {
+      text-transform:uppercase;
+      font-size:90%;
   }

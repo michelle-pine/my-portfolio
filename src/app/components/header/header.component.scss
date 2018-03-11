@@ -4,9 +4,22 @@
 .header {
     width:100vw;
     height:100vh;
+    background:white;
     @include vertical-gradient();
     color:#fff;
+    overflow:hidden;
+    left:0;
+    
+    
+    
 
+    .moving {
+        width:100vw;
+        position:absolute;
+
+        height:100vh;
+        background-image:url('../../../assets/images/stars.gif')
+    }
 
     .header-inner {
         width:100%;
@@ -21,18 +34,24 @@
         text-transform:uppercase;
         font-size:80%;
         font-weight:400;
+        color: $accent1;
     }
 
     p {
         font-size:40%;
+        max-width:100%;
     }
 
     .strip {
-        width:100%;
-        height:170px;
-        background:#000;
+        width:50vw;
+        min-width:300px;
+        height:300px;
+        background:#fff;
+        border:1px solid #ddd;
+        color:black;
         padding:20px;
         @include boxShadow();
+       
         
 
 
@@ -42,6 +61,7 @@
     .profile-pic {
         width:215px;
         height:215px;
+     
         
     }
 
@@ -49,18 +69,21 @@
         @include boxShadow();
        
         width:100%;
+        border-radius:50%;
     }
 
     .header-text {
-        width:40vw;
-        padding:20px;
-        max-width:350px;
+        width:35vw;
+       
+        max-width:325px;
         min-width:275px;
+        padding:25px;
     }
 
     .header-link {
         position:absolute;
         width:100%;
+        
         font-size:50px;
         z-index:9999;
         bottom:40px;
