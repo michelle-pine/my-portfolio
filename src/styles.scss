@@ -1,4 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+@import 'custom_variables';
 
+body {
+    font-family: $font-stack;
+    background: $bg;
+    color: $text-color;
+}
+
+a {
+    color: $accent1;
+}
+
+a:hover {
+    color: $accent2;
+    text-decoration:none;
+    @include transitions();
+}

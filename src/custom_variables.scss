@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
+$font-stack: 'Raleway',
+Helvetica,
+Arial,
+sans serif;
+$accent1: #00d2ff;
+$accent2: #3a7bd5;
+$text-color: #fff;
+$bg: rgb(22, 22, 22);
+@mixin basic-settings() {
+    font-family: $font-stack;
+    background: $bg;
+    color: $text-color;
+}
+
+@mixin vertical-gradient() {
+    background: $accent1;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, $accent1 0%, $accent2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $accent1 0%, $accent2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $accent1 0%, $accent2 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$accent1', endColorstr='$accent2', GradientType=1);
+    /* IE6-9 */
+}
+
+@mixin horizontal-gradient() {
+    background:$accent1;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, $accent1 0%, $accent2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $accent1 0%, $accent2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $accent1 0%, $accent2 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$accent1', endColorstr='$accent2', GradientType=1);
+    /* IE6-9 */
+}
+
+
+@mixin transitions() {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+@mixin boxShadow() {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+@mixin removeBullet() {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+
+@mixin removeUlFormatting() {
+    padding: 0;
+    list-style-type: none;
+}
