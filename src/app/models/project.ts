@@ -5,13 +5,15 @@ export class Project {
   dateString:string;
   description:string;
   link:string;
+  cover:string;
 
-  constructor(name:string, date:Date, description:string, link:string) { 
+  constructor(name:string, date:Date, description:string, link:string, cover:string) { 
     this.name = name;
     this.date = date;
     this.dateString = "" + date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear(); 
     this.description = description;
     this.link = link;
+    this.cover = cover;
   }
   
   ngOnInit() {

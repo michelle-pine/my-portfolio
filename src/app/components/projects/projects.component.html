@@ -1,7 +1,12 @@
-<div *ngFor="let project of projects">
-  <i class="fa fa-lock"></i>
-  <h4>{{project.name}}</h4>
-  <p>{{project.dateString}}</p>
-  <p>{{project.description}}</p>
-  <p>{{project.link}}</p>
+<div class="project-container d-flex flex-wrap">
+  <div *ngFor="let project of projects" class="project-card m-2"> 
+    <img src={{project.cover}} alt={{project.name}} class="cover">
+      <div class="overlay p-0">
+        <div class="text">
+            <h6>{{project.name}}</h6>
+            <p>{{project.description}}</p>
+        </div>
+      </div>
+
+  </div>
 </div>
