@@ -30,6 +30,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     BrowserModule,
     RouterModule.forRoot([
       { path: '', component: ProjectsPageComponent },
+      { path: 'projects', component: ProjectsPageComponent },
       { path: 'projects/:nickname', component: SingleProjectComponent },
       { path: 'about', component: AboutPageComponent },
       { path: 'contact', component: ContactPageComponent },
