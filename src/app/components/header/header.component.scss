@@ -97,9 +97,10 @@
     #down {
         cursor:pointer;
         color:#000;
+        @include transitions();
     }
 
-    down:hover {
+    #down:hover {
         color:#fff;
     }
 }

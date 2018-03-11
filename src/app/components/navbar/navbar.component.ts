@@ -32,7 +32,6 @@ export class NavbarComponent implements OnInit {
           scrollTop: $("#main").offset().top
         }, 600);
       });
-    }
     });
   }
 
