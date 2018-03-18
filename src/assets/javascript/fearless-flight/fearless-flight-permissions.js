@@ -2,7 +2,7 @@ var permissionFF = false;
 if (window.location.pathname == "/projects/fearless_flight") {
     permissionFF = true;
 }
-$(document).on('click', '#0', function () {
+$(document).on('click', '#fearless_flight', function () {
     location.reload();
     console.log("okay");
 });
