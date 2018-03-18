@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router'
 
-
+import { DataService } from './services/data-service.service';
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
@@ -12,6 +12,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FearlessFlightComponent } from './components/pages/fearless-flight/fearless-flight.component';
+
 
 
 @NgModule({
@@ -24,21 +26,24 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     NotFoundComponent,
     SingleProjectComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    FearlessFlightComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', component: ProjectsPageComponent },
+      { path: '', redirectTo: 'projects', pathMatch : 'full'},
       { path: 'projects', component: ProjectsPageComponent },
-      { path: 'projects/:nickname', component: SingleProjectComponent },
+      { path: 'projects/:id', component: SingleProjectComponent}, 
       { path: 'about', component: AboutPageComponent },
       { path: 'contact', component: ContactPageComponent },
       { path: '**', component: NotFoundComponent }
 
     ])
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

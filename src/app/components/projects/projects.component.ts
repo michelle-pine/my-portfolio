@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../../models/project';
+import { DataService } from '../../services/data-service.service';
+
 
 
 @Component({
@@ -8,23 +10,16 @@ import { Project } from '../../models/project';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  private direct:string = "../../assets/images/";
-  private projects:Project[] = [
-    new Project("Fearless Flight1", this.makeDate(2017, 2, 3), "a game", "https://", this.direct + "fearless_flight.png", "fearless_flight1"),
-    new Project("Fearless Flight2", this.makeDate(2017, 2, 3), "a game", "https://", this.direct + "fearless_flight.png", "fearless_flight2") ,
-    new Project("Fearless Flight3", this.makeDate(2017, 2, 3), "a game", "https://", this.direct + "fearless_flight.png", "fearless_flight3"),
-    new Project("Fearless Flight1", this.makeDate(2017, 2, 3), "a game", "https://", this.direct + "fearless_flight.png", "fearless_flight1"),
-    new Project("Fearless Flight2", this.makeDate(2017, 2, 3), "a game", "https://", this.direct + "fearless_flight.png", "fearless_flight2") ,
-    new Project("Fearless Flight3", this.makeDate(2017, 2, 3), "a game", "https://", this.direct + "fearless_flight.png", "fearless_flight3"),
-    new Project("Fearless Flight1", this.makeDate(2017, 2, 3), "a game", "https://", this.direct + "fearless_flight.png", "fearless_flight1"),
-    new Project("Fearless Flight2", this.makeDate(2017, 2, 3), "a game", "https://", this.direct + "fearless_flight.png", "fearless_flight2") ,
-    new Project("Fearless Flight3", this.makeDate(2017, 2, 3), "a game", "https://", this.direct + "fearless_flight.png", "fearless_flight3"),
-
-  ]
+  projects:Project[];
   
 
+  get data() { 
+    return this.dataService.projects; 
+  } 
 
-  constructor() { }
+  constructor(public dataService: DataService) { 
+    this.projects = dataService.projects;
+  } 
 
   ngOnInit() {
     

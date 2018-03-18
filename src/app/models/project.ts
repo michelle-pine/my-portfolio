@@ -7,8 +7,10 @@ export class Project {
   link:string;
   cover:string;
   nickname:string;
+  id:number;
+  component:string; 
 
-  constructor(name:string, date:Date, description:string, link:string, cover:string, nickname:string) { 
+  constructor(name:string, date:Date, description:string, link:string, cover:string, nickname:string, id:number) { 
     this.name = name;
     this.date = date;
     this.dateString = "" + date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear(); 
@@ -16,6 +18,7 @@ export class Project {
     this.link = link;
     this.cover = cover;
     this.nickname = nickname;
+    this.id = id;
   }
   
   ngOnInit() {

@@ -1,15 +1,17 @@
-<div class="project-container">
-  <a *ngFor="let project of projects" [routerLink]="['/projects', project.nickname]" class="m-2">
+<div class="project-container card-columns">
+  <a *ngFor="let project of projects" [routerLink]="['/projects', project.nickname]" class="m-2" id={{project.id}}> 
     <div class="project-card card">
       <img src={{project.cover}} alt={{project.name}} class="cover">
-      <div class="caption p-0">
-      
-          <h4>{{project.name}}</h4>
+      <div class="caption p-0 card-block">
+        <div class="card-text">
+          <div class="card-title">{{project.name}}
+          </div>
           <p>{{project.description}}</p>
-      
+        </div>
       </div>
-
     </div>
+
+
 
   </a>
 </div>
