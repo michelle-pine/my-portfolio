@@ -20,7 +20,7 @@ export class AppService {
  
   constructor(private http: Http) {
  
-    this.emailUrl = "../../assets/php/email.php";
+    this.emailUrl = "/assets/php/email.php";
   }
  
   sendEmail(message: IMessage): Observable<IMessage> | any {
