@@ -1,24 +1,19 @@
 export class Project {
 
   name:string;
-  date:Date;
-  dateString:string;
   description:string;
-  link:string;
   cover:string;
   nickname:string;
-  id:number;
-  component:string; 
+  type: string;
+  medal:boolean;
 
-  constructor(name:string, date:Date, description:string, link:string, cover:string, nickname:string, id:number) { 
+  constructor(name:string, description:string, cover:string, nickname:string, type:string, medal:boolean) { 
     this.name = name;
-    this.date = date;
-    this.dateString = "" + date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear(); 
     this.description = description;
-    this.link = link;
     this.cover = cover;
     this.nickname = nickname;
-    this.id = id;
+    this.type = type;
+    this.medal = medal;
   }
   
   ngOnInit() {

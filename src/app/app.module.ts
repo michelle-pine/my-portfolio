@@ -1,8 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router'
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
 
 import { DataService } from './services/data-service.service';
+
+import { AppService } from './services/imessage.service';
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
@@ -13,6 +18,7 @@ import { SingleProjectComponent } from './components/single-project/single-proje
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FearlessFlightComponent } from './components/pages/fearless-flight/fearless-flight.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -28,6 +34,7 @@ import { FearlessFlightComponent } from './components/pages/fearless-flight/fear
     HeaderComponent,
     NavbarComponent,
     FearlessFlightComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,10 +46,13 @@ import { FearlessFlightComponent } from './components/pages/fearless-flight/fear
       { path: 'contact', component: ContactPageComponent },
       { path: '**', component: NotFoundComponent }
 
-    ])
+    ]),
+    FormsModule,
+    HttpModule
   ],
   providers: [
-    DataService
+    DataService,
+    AppService
   ],
   bootstrap: [AppComponent]
 })

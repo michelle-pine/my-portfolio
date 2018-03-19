@@ -47,10 +47,11 @@
         min-width:300px;
         height:300px;
         background:#fff;
-        border:1px solid #ddd;
+   
         color:black;
         padding:20px;
         @include boxShadow();
+        @include transitions();
        
         
 
@@ -98,9 +99,30 @@
         cursor:pointer;
         color:#000;
         @include transitions();
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+
     }
 
     #down:hover {
         color:#fff;
     }
+
+    @media screen and (max-width: 1165px) {
+        .strip {
+            min-width:300px;
+            height:auto;
+        }
+        .header-text {
+            text-align:center!important;
+        }
+
+        .profile-pic {
+            margin-top:10px;
+            height:150px;
+            width:150px;
+        }
+       
+    }
 }
+
+

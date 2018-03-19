@@ -6,7 +6,8 @@ sans serif;
 $accent1: #fa8100;
 $accent2: #ffbe18;
 $text-color: #333;
-$bg: rgb(243, 243, 243);
+// $bg: rgb(243, 243, 243);
+$bg:#fff;
 @mixin basic-settings() {
     font-family: $font-stack;
     background: $bg;

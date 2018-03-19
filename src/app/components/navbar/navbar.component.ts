@@ -14,10 +14,19 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     $(function () {
+      var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+      var os = $('.header').offset().top; // pixels to the top of div1
+      var ht = $('.header').height();
+      // if you've scrolled further than the top of div1 plus it's height
+      // change the color. either by adding a class or setting a css property
+      if (scroll > ht - 150) {
+        $('.navbar').addClass('affix');
+      }
+
       $(window).scroll(function () {
-        var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-        var os = $('.header').offset().top; // pixels to the top of div1
-        var ht = $('.header').height();
+        scroll = $(window).scrollTop(); // how many pixels you've scrolled
+        os = $('.header').offset().top; // pixels to the top of div1
+        ht = $('.header').height();
         // if you've scrolled further than the top of div1 plus it's height
         // change the color. either by adding a class or setting a css property
         if (scroll > ht - 150) {
@@ -28,7 +37,7 @@ export class NavbarComponent implements OnInit {
         }
 
       });
-      $('.navbar').on('click', '.nav-link', function () {
+      $('.navbar').on('click', '.internal', function () {
         $('html, body').animate({
           scrollTop: $("#main").offset().top
         }, 600);
