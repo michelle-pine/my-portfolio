@@ -22,10 +22,7 @@ export class FearlessFlightComponent implements OnInit {
 
   ngOnInit() {
 
-    var contain = document.getElementById('flight-contain');
-    var text = '<script src="../../../assets/javascript/fearless-flight/fearless-flight.js" type="text/javascript"></script>';
-    var fragment = document.createRange().createContextualFragment(text);
-    contain.appendChild(fragment);
+   
   
 
 

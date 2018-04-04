@@ -19,6 +19,19 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FearlessFlightComponent } from './components/pages/fearless-flight/fearless-flight.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EmotiquoteComponent } from './components/pages/emotiquote/emotiquote.component';
+import { HowComponent } from './components/pages/how/how.component';
+import { EasyAnimatorComponent } from './components/pages/easy-animator/easy-animator.component';
+import { RibbonsThemeComponent } from './components/pages/ribbons-theme/ribbons-theme.component';
+import { MazeGameComponent } from './components/pages/maze-game/maze-game.component';
+import { ForbiddenIslandComponent } from './components/pages/forbidden-island/forbidden-island.component';
+import { PjVideosComponent } from './components/pages/pj-videos/pj-videos.component';
+import { WonderThemeComponent } from './components/pages/wonder-theme/wonder-theme.component';
+import { WindyWeatherComponent } from './components/pages/windy-weather/windy-weather.component';
+import { StarborneThemeComponent } from './components/pages/starborne-theme/starborne-theme.component';
+import { PhasesThemeComponent } from './components/pages/phases-theme/phases-theme.component';
+import { PjGraphicsComponent } from './components/pages/pj-graphics/pj-graphics.component';
+import { TumblrGraphicsComponent } from './components/pages/tumblr-graphics/tumblr-graphics.component';
 
 
 
@@ -35,6 +48,19 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     FearlessFlightComponent,
     FooterComponent,
+    EmotiquoteComponent,
+    HowComponent,
+    EasyAnimatorComponent,
+    RibbonsThemeComponent,
+    MazeGameComponent,
+    ForbiddenIslandComponent,
+    PjVideosComponent,
+    WonderThemeComponent,
+    WindyWeatherComponent,
+    StarborneThemeComponent,
+    PhasesThemeComponent,
+    PjGraphicsComponent,
+    TumblrGraphicsComponent,
   ],
   imports: [
     BrowserModule,

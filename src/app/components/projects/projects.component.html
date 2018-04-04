@@ -13,9 +13,11 @@
         <div class="caption p-0 card-block">
           <div class="card-text p-3">
             <div class="card-title">
-              <i class="fa" [ngClass]="[project.type]"></i>&nbsp;
-              <div style="display:inline" *ngIf="project.medal">
-                <i class="fa fa-trophy"></i>&nbsp;
+              <div class="d-none d-sm-inline">
+                <i class="fa" [ngClass]="[project.type]"></i>&nbsp;
+                <div style="display:inline" *ngIf="project.medal">
+                  <i class="fa fa-trophy"></i>&nbsp;
+                </div>
               </div>
               {{project.name}}
             </div>

@@ -96,6 +96,7 @@ var birdImg4;
 var birdImg5;
 var birdImg6;
 var birdImg7;
+var canvas;
 
 //explosion sprites
 var exp1;
@@ -331,9 +332,9 @@ function isGone2(flying) {
 function setup() {
   
 
-  can = createCanvas(600, 800);
+  canvas = createCanvas(600, 800);
   frameRate(20);
-  can.parent('flight-contain');
+  canvas.parent('flight-contain');
 
 
 }
