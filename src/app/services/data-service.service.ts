@@ -31,7 +31,7 @@ export class DataService {
       this.direct + "forbiddenIsland.png", "forbidden-island", "fa-code", false),
 
     new Project("Fearless Flight",
-      "Use colors and dynamic hover effects to beautify your blog! A striking tumblr theme developed in html & css. ",
+      "A javascript arcade game, developed using Illustrator and the p5 library. Play here and now!",
       this.direct + "fearless_flight.png", "fearless_flight", "fa-code", false),
 
     new Project("PJ Library Videos",

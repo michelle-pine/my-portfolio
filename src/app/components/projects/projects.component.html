@@ -1,5 +1,5 @@
-<h2 class="p-2 text-center page-title mb-5">
-  <i class="fa fa-crop"></i> &nbsp; PROJECTS &nbsp;
+<h2 class="p-2 text-center page-title smaller-page-title mb-5">
+  <i class="fa fa-crop"></i>&nbsp;PROJECTS&nbsp;
   <i class="fa fa-code"></i>
 </h2>
 <div class="project-container card-columns m-2 m-md-3 m-lg-4 ">
@@ -12,11 +12,12 @@
         </div>
         <div class="caption p-0 card-block">
           <div class="card-text p-3">
-            <div class="card-title">
-              <div class="d-none d-sm-inline">
-                <i class="fa" [ngClass]="[project.type]"></i>&nbsp;
+            <div class="card-title d-flex align-items-center">
+              <div class="d-none d-sm-inline mr-sm-1">
+
+                <div class="proj-icon"><i class="fa" [ngClass]="[project.type]"></i></div>
                 <div style="display:inline" *ngIf="project.medal">
-                  <i class="fa fa-trophy"></i>&nbsp;
+                    <div class="proj-icon trophy"><i class="fa fa-trophy"></i></div>
                 </div>
               </div>
               {{project.name}}

@@ -2,10 +2,9 @@
 .cover {
     background-position: 50%;
     background-size: 20vw 20vw;
-
     min-height: 150px;
     height: 100%;
-    width:50%;
+    width: 40%;
     min-width: 150px;
     @include boxShadow2();
 }
@@ -20,8 +19,7 @@
 }
 
 .card-block {
-    max-height:100%;
-
+    max-height: 100%;
 }
 
 .cover img {
@@ -44,10 +42,10 @@
 .project-card {
     width: 98%;
     max-height: 250px;
-    overflow:hidden;
+    overflow: hidden;
     @include transitions();
     color: white;
-    border:0;
+    border: 0;
     @include boxShadow2();
     @include transitions();
 }
@@ -67,51 +65,49 @@
     .card-title {
         font-size: 17px;
     }
-
-
-    
-
     .card {
-        min-height:150px;
-        
+        min-height: 150px;
     }
-
-  
-    
 }
-
 
 @media screen and (max-width: 475px) {
     .project-card {
-        box-shadow:none!important;
+        box-shadow: none !important;
     }
-
-
-
-
-
-  
-    
 }
-
 
 @media screen and (max-width:375px) {
     .desc {
-        font-size:12px;
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .desc {
-       display:none
+    .desc { 
+        display: none;
     }
     .card {
-        height:auto;
-        
+        height: auto;
     }
-
 }
 
 .card-title i {
-    display:inline;
+    display: inline;
+}
+
+.proj-icon {
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 14px;
+    color: $accent1;
+    border: 2px solid $accent1;
+    margin-right: 3px;
+}
+
+.proj-icon.trophy {
+    color: $accent2;
+    border-color: $accent2;
 }

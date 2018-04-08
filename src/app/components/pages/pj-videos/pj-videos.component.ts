@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PjvideoService } from '../../../services/pjvideo.service';
 
 @Component({
   selector: 'app-pj-videos',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PjVideosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pjvideos:PjvideoService) { }
 
   ngOnInit() {
   }

@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
     $("#down").click(function () {
       $('html, body').animate({
         scrollTop: $("#main").offset().top
-      }, 600);
+       - 50 }, 600);
     });
   }
 

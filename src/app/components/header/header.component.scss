@@ -12,6 +12,7 @@
     
     
     
+    
 
     .moving {
         width:100vw;
@@ -52,6 +53,7 @@
         padding:20px;
         @include boxShadow();
         @include transitions();
+        max-width:700px;
        
         
 

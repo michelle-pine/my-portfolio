@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 
 import { DataService } from './services/data-service.service';
 
+
 import { AppService } from './services/imessage.service';
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -32,6 +33,8 @@ import { StarborneThemeComponent } from './components/pages/starborne-theme/star
 import { PhasesThemeComponent } from './components/pages/phases-theme/phases-theme.component';
 import { PjGraphicsComponent } from './components/pages/pj-graphics/pj-graphics.component';
 import { TumblrGraphicsComponent } from './components/pages/tumblr-graphics/tumblr-graphics.component';
+import { AboutService } from './services/about.service';
+import { PjvideoService } from './services/pjvideo.service';
 
 
 
@@ -78,7 +81,9 @@ import { TumblrGraphicsComponent } from './components/pages/tumblr-graphics/tumb
   ],
   providers: [
     DataService,
-    AppService
+    AppService,
+    AboutService,
+    PjvideoService
   ],
   bootstrap: [AppComponent]
 })

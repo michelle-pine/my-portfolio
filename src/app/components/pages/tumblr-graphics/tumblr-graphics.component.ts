@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tumblr-graphics',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TumblrGraphicsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    window.open('https://chelle-designs.tumblr.com/', "_blank");
+    this.router.navigate(['/projects']);
   }
 
 }

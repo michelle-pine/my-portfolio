@@ -65,6 +65,11 @@ $bg:#fff;
     margin:0;
 }
 
+@mixin hoverShadow() {
+    @include boxShadow2();
+    @include transitions();
+}
+
 
 @mixin removeUlFormatting() {
     padding: 0;
