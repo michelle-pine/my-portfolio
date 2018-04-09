@@ -35,6 +35,7 @@ import { PjGraphicsComponent } from './components/pages/pj-graphics/pj-graphics.
 import { TumblrGraphicsComponent } from './components/pages/tumblr-graphics/tumblr-graphics.component';
 import { AboutService } from './services/about.service';
 import { PjvideoService } from './services/pjvideo.service';
+import { LockedProjectComponent } from './components/pages/locked-project/locked-project.component';
 
 
 
@@ -64,6 +65,7 @@ import { PjvideoService } from './services/pjvideo.service';
     PhasesThemeComponent,
     PjGraphicsComponent,
     TumblrGraphicsComponent,
+    LockedProjectComponent,
   ],
   imports: [
     BrowserModule,

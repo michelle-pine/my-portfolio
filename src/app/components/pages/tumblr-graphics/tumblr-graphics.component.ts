@@ -12,7 +12,7 @@ export class TumblrGraphicsComponent implements OnInit {
 
   ngOnInit() {
     window.open('https://chelle-designs.tumblr.com/', "_blank");
-    this.router.navigate(['/projects']);
+    this.router.navigate(['/projects']); 
   }
 
 }

@@ -1,37 +1,6 @@
 @import '../../../../custom_variables';
 
-.hackbeanpot {
-    @include horizontal-gradient();
-    padding:10px;
-    width:60vw;
-    border-radius:25px;
-    @include hoverShadow();
-    max-width:1000px;
-    min-width:300px;
-    font-size:3vw;
 
-
-    a{
-        color:white;
-    }
-
-    a:hover {
-        color:black;
-
-    }
-}
-
-.hackbeanpot:hover {
-    @include boxShadow();
-}
-
-.emotiquote-contain {
-    width:80vw;
-}
-
-.text {
-    max-width:1000px;
-}
 
 .img-wrapper {
     width:100%;
@@ -41,11 +10,6 @@
     }
 }
 
-@media screen and (max-width:500px) { 
-    .hackbeanpot {
-        font-size:16px!important;
-    }
-}
 
 .award-group {
     font-size:20px;

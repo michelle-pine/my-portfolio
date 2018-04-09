@@ -60,3 +60,42 @@ a:hover {
 .smaller-page-title {
     font-size:5vw;
 }
+
+.link-item {
+    @include horizontal-gradient();
+    padding:10px;
+    width:60vw;
+    border-radius:25px;
+    @include hoverShadow();
+    max-width:1000px;
+    min-width:300px;
+    font-size:3vw;
+
+
+    a{
+        color:white;
+    }
+
+    a:hover {
+        color:black;
+
+    }
+}
+
+.link-item:hover {
+    @include boxShadow();
+}
+
+@media screen and (max-width:500px) { 
+    .hackbeanpot {
+        font-size:16px!important;
+    }
+}
+
+.a-contain {
+    width:80vw;
+}
+
+.text {
+    max-width:1000px;
+}

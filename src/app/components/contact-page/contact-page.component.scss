@@ -1,0 +1,10 @@
+@import '../../../custom_variables';
+
+
+.card {
+    @include hoverShadow();
+}
+
+.card:hover {
+    @include boxShadow();
+}
