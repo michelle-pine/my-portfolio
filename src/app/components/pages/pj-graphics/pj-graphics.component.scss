@@ -1,0 +1,18 @@
+@import '../../../../custom_variables';
+
+
+.graphics {
+    a {
+        cursor:zoom-in;
+    }
+
+
+.graphic {
+    @include hoverShadow();
+
+}
+
+.graphic:hover {
+    @include boxShadow();
+}
+}

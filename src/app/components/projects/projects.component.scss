@@ -76,6 +76,8 @@
     }
 }
 
+
+
 @media screen and (max-width:375px) {
     .desc {
         font-size: 12px;
@@ -83,8 +85,8 @@
 }
 
 @media screen and (max-width: 360px) {
-    .desc { 
-        display: none;
+    .desc {
+        display: none
     }
     .card {
         height: auto;
@@ -110,4 +112,10 @@
 .proj-icon.trophy {
     color: $accent2;
     border-color: $accent2;
+}
+
+@media screen and (min-width:990px) and (max-width:1300px) {
+    .caption {
+        font-size:13px;
+    }
 }

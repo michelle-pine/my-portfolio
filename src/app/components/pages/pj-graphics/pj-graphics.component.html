@@ -1,3 +1,11 @@
-<p>
-  pj-graphics works!
-</p>
+<div class="card-columns p-2 graphics">
+  <ng-container *ngFor="let img of images">
+    <div class="card graphic">
+      <a href="{{img}}" target="_blank">
+      <img class="card-img-top" src={{img}} alt="a pj graphic"></a>
+    </div>
+  </ng-container>
+
+
+
+</div>

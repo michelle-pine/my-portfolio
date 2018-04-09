@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pj-graphics.component.scss']
 })
 export class PjGraphicsComponent implements OnInit {
+  images:String[] = [];
 
-  constructor() { }
+  constructor() { 
+    var direct = "../../../../assets/images/pj-graphics/";
+    for (var i = 1; i <= 26; i++) {
+      this.images.push(direct + i + ".png");
+    }
+  }
 
   ngOnInit() {
   }
