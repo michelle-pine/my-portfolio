@@ -1,6 +1,7 @@
+@import '../custom_variables';
 main {
     width:100vw;
-
+    background:$bg;
 
     min-height:100vh;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 declare var jquery: any;
 declare var $: any;
 
@@ -10,7 +11,14 @@ declare var $: any;
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    // router.events.subscribe(event => {
+    //   if (event instanceof NavigationEnd) {
+    //     if (router.url != '/') {
+    //       
+    //   }
+    // });
+  }
 
   ngOnInit() {
     $(function () {
@@ -39,9 +47,16 @@ export class NavbarComponent implements OnInit {
       });
       $('.navbar').on('click', '.internal', function () {
         $('html, body').animate({
-          scrollTop: $("#main").offset().top
+          scrollTop: $("#main").offset().top - 50
         }, 600);
       });
+
+      $(document).on('click', 'a', function () {
+        $('html, body').animate({
+          scrollTop: $("#main").offset().top - 50
+        }, 600);
+      });
+      
     });
   }
 

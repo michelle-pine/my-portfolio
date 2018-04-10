@@ -10,6 +10,10 @@ export class DataService {
       "Welcome to my new portfolio, built using Angular 4, SCSS, p5, Photoshop, Illustrator, + more.",
       this.direct + "profile_pic.svg", "how", "fa-code", false),
 
+    new Project("Luminous Theme",
+      "COMING SOON! My first responsive tumblr theme, featuring (of course) gradients, the newly released Bootstrap 4, and FontAwesome icons. ",
+      this.direct + "luminousTheme.png", "luminous-theme", "fa-code", false),
+
     new Project("Emotiquote",
       "A ReactJS application for analyzing the emotions of famous (and not-so-famous) people, books, movies, and TV shows. A big winner at HackBeanpot 2018.",
       this.direct + "emotiquote.png", "emotiquote", "fa-code", true),
@@ -17,6 +21,10 @@ export class DataService {
     new Project("The Easy Animator",
       "A Java software that converts textual instructions into descriptive, interactive or svg file animations",
       this.direct + "easy-animator.svg", "easy-animator", "fa-code", false),
+
+    new Project("Blankets for Boston",
+      "A concept website made for the Mayor's Office of New Urban Mechanics, intended as a winter public activation activity.",
+      this.direct + "blanketsForBoston.png", "blankets-for-boston", "fa-code", false),
 
     new Project("Ribbons Theme",
       "A desktop javascript arcade game, designed and coded by me using the p5 library",
