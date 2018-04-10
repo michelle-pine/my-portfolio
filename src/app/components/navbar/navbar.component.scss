@@ -6,6 +6,9 @@
     background:white;
     @include boxShadow();
     max-width:100vw;
+    position:fixed;
+    left:0;
+    top:0;
     overflow:hidden;
     
     a {
