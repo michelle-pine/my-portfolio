@@ -9,7 +9,7 @@ export class PjGraphicsComponent implements OnInit {
   images:String[] = [];
 
   constructor() { 
-    var direct = "../../../../assets/images/pj-graphics/";
+    var direct = "./assets/images/pj-graphics/";
     for (var i = 1; i <= 26; i++) {
       this.images.push(direct + i + ".png");
     }

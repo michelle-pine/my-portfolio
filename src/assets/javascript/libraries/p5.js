@@ -20664,7 +20664,7 @@ p5.prototype.loadStrings = function (path, callback, errorCallback) {
  *   //and has a header specifying the columns labels
  *   table = loadTable("assets/mammals.csv", "csv", "header");
  *   //the file can be remote
- *   //table = loadTable("http://p5js.org/reference/assets/mammals.csv",
+ *   //table = loadTable("http://p5js.org/reference./assets/mammals.csv",
  *   //                  "csv", "header");
  * }
  *

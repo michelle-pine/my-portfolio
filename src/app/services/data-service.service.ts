@@ -3,7 +3,7 @@ import { Project } from '../models/project';
 
 @Injectable()
 export class DataService {
-  private direct: string = "../../assets/images/";
+  private direct: string = "./assets/images/";
   projects: Project[] = [
 
     new Project("This Website",

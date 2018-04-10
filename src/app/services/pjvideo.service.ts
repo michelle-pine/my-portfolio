@@ -3,7 +3,7 @@ import { Video } from '../models/video';
 
 @Injectable()
 export class PjvideoService {
-  direct:string = "../../../../assets/images/pj-posters/";  
+  direct:string = "./assets/images/pj-posters/";  
   videos:Video[] = 
   [
     new Video("Book Trailer for Bear Feels Sick by Karma Wilson and Jane Chapman:",
