@@ -7,8 +7,11 @@ import { PjvideoService } from '../../../services/pjvideo.service';
   styleUrls: ['./pj-videos.component.scss']
 })
 export class PjVideosComponent implements OnInit {
+  pjvideos:PjvideoService
 
-  constructor(private pjvideos:PjvideoService) { }
+  constructor(pjvideos:PjvideoService) { 
+    this.pjvideos = pjvideos;
+  }
 
   ngOnInit() {
   }
