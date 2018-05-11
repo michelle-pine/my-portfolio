@@ -3,7 +3,7 @@ var permissionFF = false;
 $(document).ready(function() {
     if (window.location.pathname == "/projects/fearless_flight") {
 
-        $.getScript("./assets/javascript/fearless-flight/fearless-flight.js", function() {
+        $.getScript("/assets/javascript/fearless-flight/fearless-flight.js", function() {
         });
         permissionFF = true;
     
