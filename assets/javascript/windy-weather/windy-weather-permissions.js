@@ -3,6 +3,12 @@ var permissionWW = false;
 $(document).ready(function() {
     if (window.location.pathname == "/projects/windy_weather") {
         permissionWW = true;
+        $.getScript("/assets/javascript/libraries/p5.js", function() {
+        });
+        $.getScript("/assets/javascript/libraries/p5.dom.js", function() {
+        });
+        $.getScript("/assets/javascript/libraries/p5.sound.js", function() {
+        });
         $.getScript("/assets/javascript/windy-weather/windy-weather.js", function() {
         });
 
