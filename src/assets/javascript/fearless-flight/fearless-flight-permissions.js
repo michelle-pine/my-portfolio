@@ -2,23 +2,16 @@ var permissionFF = false;
 
 $(document).ready(function() {
     if (window.location.pathname == "/projects/fearless_flight") {
-        $.getScript("/assets/javascript/libraries/p5.js", function() {
-        });
-        $.getScript("/assets/javascript/libraries/p5.dom.js", function() {
-        });
-        $.getScript("/assets/javascript/libraries/p5.sound.js", function() {
-        });
-        $.getScript("/assets/javascript/fearless-flight/fearless-flight.js", function() {
-        });
         permissionFF = true;
-    
-       
+        $.getScript("./assets/javascript/libraries/p5.sound.js").done(function() {
+            $.getScript("./assets/javascript/fearless-flight/fearless-flight.js", function() {
+            });
+        });
     }
 })
 
 $(document).on('click', '#fearless_flight', function () {
     location.reload();
-    console.log("okay");
     
 });
 $(document).on('click', 'body', function () {
