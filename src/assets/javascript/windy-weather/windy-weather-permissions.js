@@ -10,7 +10,7 @@ $(document).ready(function() {
       );
     }
     if (is.not.desktop()) {
-      $("#flight-contain").html(
+      $("#windy-contain").html(
         "This project is not supported on mobile or tablet."
       );
     }
