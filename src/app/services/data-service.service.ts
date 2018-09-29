@@ -6,6 +6,18 @@ export class DataService {
   private direct: string = "./assets/images/";
   projects: Project[] = [
 
+    new Project("C3PO-R3",
+    "The front-end of a cardiac catheterization risk registry, developed and designed by me for Boston Children's Hospital's renowned Heart Center",
+    this.direct + "c3po.png", "c3po", "fa-code", false),
+
+    new Project("Cardiac Fitness App",
+    "A responsive application developed for Boston Children Hospital, intended to help children with heart problems track their fitness",
+    this.direct + "cf.png", "cf", "fa-code", false),
+    
+    new Project("Emotiquote",
+    "A ReactJS application for analyzing the emotions of famous (and not-so-famous) people, books, movies, and TV shows. A big winner at HackBeanpot 2018.",
+    this.direct + "emotiquote.png", "emotiquote", "fa-code", true),
+
     new Project("This Website",
       "Welcome to my new portfolio, built using Angular 4, SCSS, p5, Photoshop, Illustrator, + more.",
       this.direct + "profile_pic.svg", "how", "fa-code", false),
@@ -14,9 +26,7 @@ export class DataService {
       "COMING SOON! My first responsive tumblr theme, featuring (of course) gradients, the newly released Bootstrap 4, and FontAwesome icons. ",
       this.direct + "luminousTheme.png", "luminous-theme", "fa-code", false),
 
-    new Project("Emotiquote",
-      "A ReactJS application for analyzing the emotions of famous (and not-so-famous) people, books, movies, and TV shows. A big winner at HackBeanpot 2018.",
-      this.direct + "emotiquote.png", "emotiquote", "fa-code", true),
+   
 
     new Project("The Easy Animator",
       "A Java software that converts textual instructions into descriptive, interactive or svg file animations",

@@ -1,4 +1,6 @@
 @import '../../../custom_variables';
+
+
 .cover {
     background-position: 50%;
     background-size: 20vw 20vw;
@@ -38,9 +40,11 @@
     text-transform: uppercase;
     font-weight: 400;
 }
-
+.card-deck a {
+    width:48%;
+}
 .project-card {
-    width: 98%;
+    width: 100%;
     max-height: 250px;
     overflow: hidden;
     @include transitions();
@@ -54,13 +58,13 @@
     @include boxShadow();
 }
 
-.card-columns {
-    column-count: 2;
-}
 
-@media screen and (max-width: 1040px) {
-    .card-columns {
-        column-count: 1;
+
+@media screen and (max-width: 1020px) {
+
+
+    .card-deck a {
+        width:100%;
     }
     .card-title {
         font-size: 17px;

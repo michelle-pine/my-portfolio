@@ -2,7 +2,7 @@
   <i class="fa fa-crop"></i>&nbsp;PROJECTS&nbsp;
   <i class="fa fa-code"></i>
 </h2>
-<div class="project-container card-columns m-2 m-md-3 m-lg-4 ">
+<div class="project-container card-deck m-2 m-md-3 m-lg-4 ">
 
   <a *ngFor="let project of projects" [routerLink]="['/projects', project.nickname]" class="m-2" id={{project.nickname}}>
     <div class="project-card card mx-auto">

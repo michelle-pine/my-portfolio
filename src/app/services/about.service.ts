@@ -10,7 +10,7 @@ export class AboutService {
 
   constructor() { 
     this.skills = [
-      new Skillset("Languages", ["Java", "Javascript", "Typescript", "HTML", "CSS", "SCSS", "LESS", "Racket", "Command Line"], "fa fa-code"),
+      new Skillset("Languages", ["Java", "Javascript", "R", "Typescript", "HTML", "CSS", "SCSS", "LESS", "Racket", "Command Line"], "fa fa-code"),
       new Skillset("Libraries", ["Bootstrap", "Angular", "p5", "ReactJS (Familiar)"], "fa fa-file-archive-o"),
       new Skillset("Design", ["Photoshop", "Illustrator", "Premiere Pro", "InDesign", "After Effects", "Marvel", "Invision", "Balsamiq"], "fa fa-crop"),
       new Skillset("More", ["Public Speaking", "Social Media", "Copywriting"], "fa fa-plus-circle"),

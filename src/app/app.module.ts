@@ -38,6 +38,8 @@ import { PjvideoService } from './services/pjvideo.service';
 import { LockedProjectComponent } from './components/pages/locked-project/locked-project.component';
 import { BlanketsForBostonComponent } from './components/pages/blankets-for-boston/blankets-for-boston.component';
 import { LuminousThemeComponent } from './components/pages/luminous-theme/luminous-theme.component';
+import { C3poR3Component } from './components/pages/c3po-r3/c3po-r3.component';
+import { CfComponent } from './components/pages/cf/cf.component';
 
 
 
@@ -70,6 +72,8 @@ import { LuminousThemeComponent } from './components/pages/luminous-theme/lumino
     LockedProjectComponent,
     BlanketsForBostonComponent,
     LuminousThemeComponent,
+    C3poR3Component,
+    CfComponent,
   ],
   imports: [
     BrowserModule,
