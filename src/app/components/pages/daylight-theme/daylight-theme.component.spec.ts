@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LuminousThemeComponent } from './luminous-theme.component';
+import { DaylightThemeComponent } from './daylight-theme.component';
 
-describe('LuminousThemeComponent', () => {
-  let component: LuminousThemeComponent;
-  let fixture: ComponentFixture<LuminousThemeComponent>;
+describe('DaylightThemeComponent', () => {
+  let component: DaylightThemeComponent;
+  let fixture: ComponentFixture<DaylightThemeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LuminousThemeComponent ]
+      declarations: [ DaylightThemeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LuminousThemeComponent);
+    fixture = TestBed.createComponent(DaylightThemeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

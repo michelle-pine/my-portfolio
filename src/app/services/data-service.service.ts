@@ -22,12 +22,10 @@ export class DataService {
       "Welcome to my new portfolio, built using Angular 4, SCSS, p5, Photoshop, Illustrator, + more.",
       this.direct + "profile_pic.svg", "how", "fa-code", false),
 
-    new Project("Luminous Theme",
+    new Project("Daylight Theme",
       "COMING SOON! My first responsive tumblr theme, featuring (of course) gradients, the newly released Bootstrap 4, and FontAwesome icons. ",
-      this.direct + "luminousTheme.png", "luminous-theme", "fa-code", false),
-
-   
-
+      this.direct + "daylightTheme.gif", "daylight-theme", "fa-code", false),
+      
     new Project("The Easy Animator",
       "A Java software that converts textual instructions into descriptive, interactive or svg file animations",
       this.direct + "easy-animator.svg", "easy-animator", "fa-code", false),
