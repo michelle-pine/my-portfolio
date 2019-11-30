@@ -124,12 +124,20 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_pages_daylight_theme_daylight_theme_component__ = __webpack_require__("../../../../../src/app/components/pages/daylight-theme/daylight-theme.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_pages_c3po_r3_c3po_r3_component__ = __webpack_require__("../../../../../src/app/components/pages/c3po-r3/c3po-r3.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_pages_cf_cf_component__ = __webpack_require__("../../../../../src/app/components/pages/cf/cf.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_pages_advanced_writing_advanced_writing_component__ = __webpack_require__("../../../../../src/app/components/pages/advanced-writing/advanced-writing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_pages_front_end_dev_front_end_dev_component__ = __webpack_require__("../../../../../src/app/components/pages/front-end-dev/front-end-dev.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_pages_colab_colab_component__ = __webpack_require__("../../../../../src/app/components/pages/colab/colab.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_pages_wizard_quest_wizard_quest_component__ = __webpack_require__("../../../../../src/app/components/pages/wizard-quest/wizard-quest.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -203,6 +211,10 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_35__components_pages_daylight_theme_daylight_theme_component__["a" /* DaylightThemeComponent */],
                 __WEBPACK_IMPORTED_MODULE_36__components_pages_c3po_r3_c3po_r3_component__["a" /* C3poR3Component */],
                 __WEBPACK_IMPORTED_MODULE_37__components_pages_cf_cf_component__["a" /* CfComponent */],
+                __WEBPACK_IMPORTED_MODULE_38__components_pages_advanced_writing_advanced_writing_component__["a" /* AdvancedWritingComponent */],
+                __WEBPACK_IMPORTED_MODULE_39__components_pages_front_end_dev_front_end_dev_component__["a" /* FrontEndDevComponent */],
+                __WEBPACK_IMPORTED_MODULE_40__components_pages_colab_colab_component__["a" /* ColabComponent */],
+                __WEBPACK_IMPORTED_MODULE_41__components_pages_wizard_quest_wizard_quest_component__["a" /* WizardQuestComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -669,6 +681,67 @@ var NotFoundComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/pages/advanced-writing/advanced-writing.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h6 class=\"p-2 text-center page-title smaller-page-title\">\n  &nbsp; WRITING SAMPLES &nbsp;\n</h6>\n\n<div class=\"d-flex flex-column px-3 text-center\">\n  <div class=\"a-contain mx-auto\">\n    <p>For Northeastern's Interdisciplinary Advanced Writing class, students are required to complete several writing projects. You may find these writing projects below.</p>\n    <div class=\"writing-container d-flex flex-row align-items-start flex-wrap flex-lg-nowrap\">\n      <a target=\"_blank\" href=\"./assets/documents/adv-writing-1.pdf\" class=\"d-flex flex-column text-align-center\">\n        <div class=\"icon-wrapper\">\n          <i class=\"fa fa-file-pdf-o\"></i>\n        </div>\n        <div class=\"writing-title\">\n          <h4>Genre, Rhetoric, and Discourse Analysis</h4>\n          <p>An analysis of “The Racist History Behind Facial Recognition” by New York Times graphics editor Sahil Chinoy</p>\n        </div>\n      </a>\n      <a target=\"_blank\" href=\"https://michelle-pine.github.io/accessible-front-end-dev/\" class=\"d-flex flex-column\">\n        <div class=\"icon-wrapper\">\n          <i class=\"fa fa-link\"></i>\n        </div>\n        <div class=\"writing-title\">\n          <h4>Accessible Front-End Development</h4>\n          <p>A reference document describing common mistakes and solutions when creating accessible websites.</p>\n        </div>\n      </a>\n      <a target=\"_blank\" href=\"./assets/documents/adv-writing-3.pdf\" class=\"d-flex flex-column\">\n        <div class=\"icon-wrapper\">\n          <i class=\"fa fa-file-pdf-o\"></i>\n        </div>\n        <div class=\"writing-title\">\n          <h4>Robot Recruiters: The Rise of AI in Recruiting</h4>\n          <p>A literature review examining the circumstances the led to use of AI in recruiting practices, as well as the potentially consequences of such use.</p>\n        </div>\n      </a>\n      <a href=\"./assets/documents/Reflection.pdf\" class=\"d-flex flex-column\">\n          <div class=\"icon-wrapper\">\n            <i class=\"fa fa-file-pdf-o\"></i>\n          </div>\n          <div class=\"writing-title\">\n            <h4>Reflection</h4>\n            <p>A reflection of the course's work.</p>\n          </div>\n        </a>\n    </div>\n    <h2 class=\"p-2 text-center page-title smaller-page-title secondary-title\">\n      &nbsp; SUPPORTING DOCUMENTS &nbsp;\n    </h2>\n    <div class=\"supporting-documents-container d-flex flex-column\">\n      <a href=\"./assets/documents/MichellePunit1roughdraft.pdf\" class=\"support-document\">\n        <i class=\"fa fa-file-pdf-o\"></i>\n        <div>Rough Draft - Genre, Rhetoric, and Discourse Analysis</div>\n      </a>\n      <a href=\"./assets/documents/MichellePRevEvanTothUnit2.pdf\" class=\"support-document\">\n        <i class=\"fa fa-file-pdf-o\"></i>\n        <div>Revision Club Letters - Reference Document</div>\n      </a>\n      <a href=\"./assets/documents/MichellePRevElifCUnit3RoughDraft.pdf\" class=\"support-document\">\n        <i class=\"fa fa-file-pdf-o\"></i>\n        <div>Revision Club Letters - Literature Review</div>\n      </a>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/advanced-writing/advanced-writing.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@import url(\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\");\n@keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n/* Firefox < 16 */\n/* Safari, Chrome and Opera > 12.1 */\n@-webkit-keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n/* Internet Explorer */\n/* Opera < 12.1 */\n.secondary-title {\n  font-size: 30px;\n  margin-top: 25px; }\n.writing-container {\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n.writing-container .flex-column {\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    max-width: 250px;\n    border: 2px solid #fa8100;\n    border-radius: 10px;\n    padding: 15px;\n    margin: 15px;\n    -webkit-transition: 0.3s all;\n    transition: 0.3s all; }\n.writing-container .flex-column:hover {\n      border-color: #ffbe18; }\n.writing-container .flex-column:hover .icon-wrapper {\n        background: #ffbe18;\n        -webkit-transition: 0.3s all;\n        transition: 0.3s all; }\n.writing-container .icon-wrapper {\n    width: 150px;\n    height: 150px;\n    background: #fa8100;\n    border-radius: 10px;\n    margin: 15px;\n    color: white;\n    font-size: 80px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n.supporting-documents-container .support-document {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  border: 2px solid #fa8100;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin: 5px;\n  -webkit-transition: 0.3s all;\n  transition: 0.3s all;\n  padding: 5px;\n  border-radius: 5px; }\n.supporting-documents-container .support-document i {\n    margin-right: 10px; }\n.supporting-documents-container .support-document:hover {\n    border: 2px solid #ffbe18; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/advanced-writing/advanced-writing.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdvancedWritingComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AdvancedWritingComponent = /** @class */ (function () {
+    function AdvancedWritingComponent() {
+    }
+    AdvancedWritingComponent.prototype.ngOnInit = function () {
+    };
+    AdvancedWritingComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-advanced-writing',
+            template: __webpack_require__("../../../../../src/app/components/pages/advanced-writing/advanced-writing.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/pages/advanced-writing/advanced-writing.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AdvancedWritingComponent);
+    return AdvancedWritingComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/pages/blankets-for-boston/blankets-for-boston.component.html":
 /***/ (function(module, exports) {
 
@@ -846,6 +919,67 @@ var CfComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], CfComponent);
     return CfComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/colab/colab.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  colab works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/colab/colab.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/colab/colab.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ColabComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ColabComponent = /** @class */ (function () {
+    function ColabComponent() {
+    }
+    ColabComponent.prototype.ngOnInit = function () {
+    };
+    ColabComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-colab',
+            template: __webpack_require__("../../../../../src/app/components/pages/colab/colab.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/pages/colab/colab.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ColabComponent);
+    return ColabComponent;
 }());
 
 
@@ -1151,6 +1285,67 @@ var ForbiddenIslandComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ForbiddenIslandComponent);
     return ForbiddenIslandComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/front-end-dev/front-end-dev.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  front-end-dev works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/front-end-dev/front-end-dev.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/front-end-dev/front-end-dev.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FrontEndDevComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FrontEndDevComponent = /** @class */ (function () {
+    function FrontEndDevComponent() {
+    }
+    FrontEndDevComponent.prototype.ngOnInit = function () {
+    };
+    FrontEndDevComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-front-end-dev',
+            template: __webpack_require__("../../../../../src/app/components/pages/front-end-dev/front-end-dev.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/pages/front-end-dev/front-end-dev.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FrontEndDevComponent);
+    return FrontEndDevComponent;
 }());
 
 
@@ -1784,6 +1979,67 @@ var WindyWeatherComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/pages/wizard-quest/wizard-quest.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  wizard-quest works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/wizard-quest/wizard-quest.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/pages/wizard-quest/wizard-quest.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WizardQuestComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var WizardQuestComponent = /** @class */ (function () {
+    function WizardQuestComponent() {
+    }
+    WizardQuestComponent.prototype.ngOnInit = function () {
+    };
+    WizardQuestComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-wizard-quest',
+            template: __webpack_require__("../../../../../src/app/components/pages/wizard-quest/wizard-quest.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/pages/wizard-quest/wizard-quest.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], WizardQuestComponent);
+    return WizardQuestComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/pages/wonder-theme/wonder-theme.component.html":
 /***/ (function(module, exports) {
 
@@ -1984,7 +2240,7 @@ var ProjectsComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/components/single-project/single-project.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"router.url == '/projects/how'\">\n    <app-how></app-how>\n</div>\n\n<div *ngIf=\"router.url == '/projects/emotiquote'\">\n    <app-emotiquote></app-emotiquote>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/easy-animator'\">\n    <app-easy-animator></app-easy-animator>\n</div>\n\n<div *ngIf=\"router.url == '/projects/ribbons'\">\n    <app-ribbons-theme></app-ribbons-theme>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/maze-game'\">\n    <app-maze-game></app-maze-game>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/forbidden-island'\">\n    <app-forbidden-island></app-forbidden-island>\n</div>\n\n<div *ngIf=\"router.url == '/projects/fearless_flight'\">\n    <app-fearless-flight></app-fearless-flight>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/pj_videos'\">\n    <app-pj-videos></app-pj-videos>\n</div>\n\n<div *ngIf=\"router.url == '/projects/wonder'\">\n    <app-wonder-theme></app-wonder-theme>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/windy_weather'\">\n    <app-windy-weather></app-windy-weather>\n</div>\n\n<div *ngIf=\"router.url == '/projects/starborne'\">\n    <app-starborne-theme></app-starborne-theme>\n</div>\n\n<div *ngIf=\"router.url == '/projects/phases'\">\n    <app-phases-theme></app-phases-theme>\n</div>\n\n<div *ngIf=\"router.url == '/projects/pj_graphics'\">\n    <app-pj-graphics></app-pj-graphics>\n</div>\n\n<div *ngIf=\"router.url == '/projects/tumblr_graphics'\">\n    <app-tumblr-graphics></app-tumblr-graphics>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/blankets-for-boston'\">\n    <app-blankets-for-boston></app-blankets-for-boston>\n</div>\n\n<div *ngIf=\"router.url == '/projects/daylight-theme'\">\n    <app-daylight-theme></app-daylight-theme>\n</div>\n\n<div *ngIf=\"router.url == '/projects/c3po'\">\n    <app-c3po-r3></app-c3po-r3>\n</div>\n\n<div *ngIf=\"router.url == '/projects/cf'\">\n    <app-cf></app-cf>\n</div>"
+module.exports = "<div *ngIf=\"router.url == '/projects/how'\">\n    <app-how></app-how>\n</div>\n\n<div *ngIf=\"router.url == '/projects/emotiquote'\">\n    <app-emotiquote></app-emotiquote>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/easy-animator'\">\n    <app-easy-animator></app-easy-animator>\n</div>\n\n<div *ngIf=\"router.url == '/projects/ribbons'\">\n    <app-ribbons-theme></app-ribbons-theme>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/maze-game'\">\n    <app-maze-game></app-maze-game>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/forbidden-island'\">\n    <app-forbidden-island></app-forbidden-island>\n</div>\n\n<div *ngIf=\"router.url == '/projects/fearless_flight'\">\n    <app-fearless-flight></app-fearless-flight>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/pj_videos'\">\n    <app-pj-videos></app-pj-videos>\n</div>\n\n<div *ngIf=\"router.url == '/projects/wonder'\">\n    <app-wonder-theme></app-wonder-theme>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/windy_weather'\">\n    <app-windy-weather></app-windy-weather>\n</div>\n\n<div *ngIf=\"router.url == '/projects/starborne'\">\n    <app-starborne-theme></app-starborne-theme>\n</div>\n\n<div *ngIf=\"router.url == '/projects/phases'\">\n    <app-phases-theme></app-phases-theme>\n</div>\n\n<div *ngIf=\"router.url == '/projects/pj_graphics'\">\n    <app-pj-graphics></app-pj-graphics>\n</div>\n\n<div *ngIf=\"router.url == '/projects/tumblr_graphics'\">\n    <app-tumblr-graphics></app-tumblr-graphics>\n</div>\n\n\n<div *ngIf=\"router.url == '/projects/blankets-for-boston'\">\n    <app-blankets-for-boston></app-blankets-for-boston>\n</div>\n\n<div *ngIf=\"router.url == '/projects/daylight-theme'\">\n    <app-daylight-theme></app-daylight-theme>\n</div>\n\n<div *ngIf=\"router.url == '/projects/c3po'\">\n    <app-c3po-r3></app-c3po-r3>\n</div>\n\n<div *ngIf=\"router.url == '/projects/cf'\">\n    <app-cf></app-cf>\n</div>\n\n<div *ngIf=\"router.url == '/projects/adv-writing'\">\n    <app-advanced-writing></app-advanced-writing>\n</div>\n"
 
 /***/ }),
 
@@ -2194,6 +2450,7 @@ var DataService = /** @class */ (function () {
     function DataService() {
         this.direct = "./assets/images/";
         this.projects = [
+            new __WEBPACK_IMPORTED_MODULE_1__models_project__["a" /* Project */]("Writing Samples", "Documents created for Northeastern's Interdisciplinary Advanced Writing class.", this.direct + "advanced-writing.svg", "adv-writing", "fa-pencil", false),
             new __WEBPACK_IMPORTED_MODULE_1__models_project__["a" /* Project */]("C3PO-R3", "The front-end of a cardiac catheterization risk registry, developed and designed by me for Boston Children's Hospital's renowned Heart Center", this.direct + "c3po.png", "c3po", "fa-code", false),
             new __WEBPACK_IMPORTED_MODULE_1__models_project__["a" /* Project */]("Cardiac Fitness App", "A responsive application developed for Boston Children Hospital, intended to help children with heart problems track their fitness", this.direct + "cf.png", "cf", "fa-code", false),
             new __WEBPACK_IMPORTED_MODULE_1__models_project__["a" /* Project */]("Emotiquote", "A ReactJS application for analyzing the emotions of famous (and not-so-famous) people, books, movies, and TV shows. A big winner at HackBeanpot 2018.", this.direct + "emotiquote.png", "emotiquote", "fa-code", true),
