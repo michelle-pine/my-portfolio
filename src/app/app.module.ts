@@ -40,6 +40,10 @@ import { BlanketsForBostonComponent } from './components/pages/blankets-for-bost
 import { DaylightThemeComponent } from './components/pages/daylight-theme/daylight-theme.component';
 import { C3poR3Component } from './components/pages/c3po-r3/c3po-r3.component';
 import { CfComponent } from './components/pages/cf/cf.component';
+import { AdvancedWritingComponent } from './components/pages/advanced-writing/advanced-writing.component';
+import { FrontEndDevComponent } from './components/pages/front-end-dev/front-end-dev.component';
+import { ColabComponent } from './components/pages/colab/colab.component';
+import { WizardQuestComponent } from './components/pages/wizard-quest/wizard-quest.component';
 
 
 
@@ -74,6 +78,10 @@ import { CfComponent } from './components/pages/cf/cf.component';
     DaylightThemeComponent,
     C3poR3Component,
     CfComponent,
+    AdvancedWritingComponent,
+    FrontEndDevComponent,
+    ColabComponent,
+    WizardQuestComponent,
   ],
   imports: [
     BrowserModule,

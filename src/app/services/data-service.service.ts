@@ -5,6 +5,9 @@ import { Project } from '../models/project';
 export class DataService {
   private direct: string = "./assets/images/";
   projects: Project[] = [
+    new Project("Writing Samples",
+    "Documents created for Northeastern's Interdisciplinary Advanced Writing class.",
+    this.direct + "advanced-writing.svg", "adv-writing", "fa-pencil", false),
 
     new Project("C3PO-R3",
     "The front-end of a cardiac catheterization risk registry, developed and designed by me for Boston Children's Hospital's renowned Heart Center",

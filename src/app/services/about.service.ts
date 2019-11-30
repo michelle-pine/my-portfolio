@@ -17,7 +17,7 @@ export class AboutService {
   ];
 
   this.experience = [
-    new Experience("Bookbub", "Software Engineering Co-op", "Edited, maintained, and developed the Bookbub software using React, Ruby on Rails, Postgres, automated tests, and continuous integration practices."),
+    new Experience("BookBub", "Software Engineering Co-op", "Edited, maintained, and developed the Bookbub software using React, Ruby on Rails, Postgres, automated tests, and continuous integration practices."),
     new Experience("Boston Children's Hospital", "Web UI Innovator and Graphics Designer", "Designed, implemented, and improved the front-end design of various Heart Center web applications, utilizing technologies such as Angular, Javascript, HTML, CSS, Balsamiq, SCSS, and LESS"),
     new Experience("Harold Grinspoon Foundation", "Social Media Intern and Freelance Designer", "Designed various social media graphics; Composed, edited, and animated book trailers and other promotional videos; Marketed the organization through social media copy."),
     new Experience("Johnson Memorial Hospital", "Information Services Volunteer", "Installed and repaired technological devices; Documented extensive amounts of healthcare data."),
