@@ -1,0 +1,139 @@
+@import '../../index.scss';
+
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  @include transition;
+  position: fixed;
+  left: 0;
+  padding: 5px;
+  top: 0;
+  justify-content: space-between;
+  z-index: 999;
+  border-bottom: 3px solid rgba(0,0,0,0);
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+   .navbar-logo {
+      margin-right: 15px;
+      width: 40px;
+      height: 40px;
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
+      img {
+        width: 100%;
+      } 
+      a {
+        border: 3px solid rgba(0,0,0,0);
+        display: block;
+        width: 40px;
+        height: 40px;      
+        @include transition;
+        &:hover, &:focus {
+          border: 3px solid $purple;
+          outline: none!important;
+          border-radius: 100%;
+        }
+      }
+    }
+    .navbar-links {
+      display: flex;
+      @include no-bullet;
+      .navbar-link {
+        color: $yellow;
+        background: $dark-purple;
+        min-width: 50px;
+        border-radius: 25px;
+        padding: 10px;
+        text-decoration: none;
+        @include transition; 
+        margin-right: 10px;
+        &:hover, &:focus {
+          background: $purple;
+          outline: none;
+        }
+        &.active {
+          background: $yellow;
+          color: $darkest-purple;
+          &:hover, &:focus {
+            background: $yellow;
+            color: $darkest-purple;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-right {
+    display: flex;
+    padding-right: 25px;
+    align-items: center;
+    .navbar-social-media {
+      @include no-bullet;
+      display: flex;
+      .navbar-link {
+        color: $dark-purple;
+        background: $dark-purple;
+        text-decoration: none;
+        font-size: 25px;
+        @include transition; 
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        position: relative;
+        border-radius: 50%;
+        margin-right: 10px;
+        i {
+          color: $yellow;
+          width: 20px;
+          margin-top: 4px;
+          font-size: 20px;
+          height: 24px;
+        }
+        &:hover, &:focus {
+          background: $purple;
+          outline: none!important;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    justify-content: center;
+    .navbar-logo {
+      display: none;
+    }
+    .navbar-links {
+      font-size: 13px;
+     
+    }
+    .navbar-left {
+      padding-left: 0px;
+      .navbar-links {
+        .navbar-link {
+          margin-right: 3px;
+        }
+      }
+    }
+    .navbar-right {
+      padding-right: 0px;
+      .navbar-social-media {
+        .navbar-link {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  &.scrolled {
+    background: darken($darkest-purple, 5);
+    border-bottom: 3px solid rgba($dark-purple, 0.5);
+  }
+}

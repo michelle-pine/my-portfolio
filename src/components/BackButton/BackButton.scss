@@ -1,0 +1,33 @@
+@import '../../index.scss';
+
+.back-button {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  margin-left: 115px;
+  border: none;
+  outline: none;
+  font-family: $font-stack;
+  font-size: 14px;
+  background: $dark-purple;
+  color: $yellow;
+  padding: 10px;
+  border-radius: 25px;
+  @include transition;
+  i {
+    margin-right: 10px;
+  }
+
+  &:hover, &:focus {
+    background: $purple;
+  }
+
+  @media screen and (max-width: 925px){
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    text-align: center;
+  }
+}

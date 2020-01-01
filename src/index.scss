@@ -1,0 +1,315 @@
+$turquoise: #5DE8E5;
+$pink: #F44D9B;
+$magenta: #E9275B;
+$dark-purple: #392270;
+$darkest-purple: #01082d;
+$almost-black: rgb(1, 4, 19);
+$yellow: #ffff66;
+$purple: #5736A7;
+$light-purple: #7A11FF;
+$white: #FFF;
+
+@mixin transition {
+  transition: 0.3s all;
+}
+
+@mixin no-bullet {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style-type: none;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Nanum+Pen+Script|Open+Sans&display=swap');
+
+$font-stack: 'Montserrat', sans-serif;
+
+
+body {
+  color: $white;
+  background-color: $darkest-purple;
+  background: #e9275b; /* Old browsers */
+  background: -moz-linear-gradient(top,  #e9275b 0%, #ffff66 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #e9275b 0%,#ffff66 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #e9275b 0%,#ffff66 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9275b', endColorstr='#ffff66',GradientType=0 ); /* IE6-9 */
+  font-size: 14px;
+  position: relative;
+  font-family: $font-stack;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.page {
+  position: relative;
+  .page-description {
+    max-width: 700px;
+    margin: 0 auto;
+    background: $dark-purple;
+    border: 3px solid $purple;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    a {
+      color: $yellow;
+      @include transition();
+      text-decoration: none;
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      margin-bottom: 0px;
+      border-radius: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      &.no-top-border {
+        border-top: 0px;
+      }
+    }
+  }
+  .page-image-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-width: 725px;
+      width: 100%;
+      border: 3px solid $purple;
+      border-radius: 10px;
+      
+    }
+    &.no-border {
+      img {
+        border: 0px;
+      }
+    }
+    margin-bottom: 25px;
+    cursor: zoom-in;
+    @include transition();
+    &:focus {
+      outline: none;
+      img {
+        border-color: $yellow;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      margin-bottom: 0px;
+      img {
+        border-radius: 0px;
+        border-top: 0px;
+      }
+    }
+  }
+  .side-by-side-image {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    .page-image-wrapper {
+      img {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      +.page-image-wrapper {
+        margin-left: 2px;
+        img {
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          margin-bottom: 3px;
+        }
+      } 
+    }
+    .page-image-wrapper {
+      max-width: 350px;
+    }
+  }
+}
+
+.page-content {
+  min-height: calc(100vh - 123px);
+  background: $darkest-purple;
+  margin-top: -2px;
+  padding-top: 100px;
+  z-index: 100;
+  .content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 0px;
+    padding-top: 50px;
+    width: 100vw;
+  }
+}
+
+@mixin shadow {
+  box-shadow: 0px 8px 15px rgba(1, 4, 19, 0.5);
+}
+
+
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFFF66';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFFF66';
+  }
+  @return unquote($value);
+}
+
+.logo-bg {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: -1;
+  .header-logo {
+    margin-top: 30vh;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+    max-width: 275px;
+    width: 25%;
+    height: auto;
+    min-width: 200px;
+  }
+}
+
+$shadows-small:  multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big:    multiple-box-shadow(100);
+
+#stars {
+  width: 2px;
+  height: 2px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: transparent;
+  z-index: -1;
+  box-shadow: $shadows-small;
+  animation: animStar 50s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: -2000px;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+}
+    
+#stars2 { 
+  width: 3px;
+  height: 3px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 100s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: -2000px;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+}
+
+#stars3 {
+  width: 4px;
+  height: 4px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  position: fixed;
+  left: 0;
+  z-index: -1;
+  top: 0;
+  animation: animStar 150s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: -2000px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-big;
+  } 
+}
+
+.page {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px)
+  }
+  to {
+    transform: translateY(2000px)
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

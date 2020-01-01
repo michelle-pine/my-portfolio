@@ -1,0 +1,142 @@
+@import '../../index.scss';
+
+.project {
+  display: flex;
+  text-decoration: none;
+  color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  @include transition;
+  max-height: 250px;
+  position: relative;
+  min-height: 200px;
+  .project-image {
+    overflow: hidden;
+    min-width: 50%;
+    border: 3px solid $dark-purple;
+    min-height: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 0px;
+    @include transition;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+  }
+  .project-info {
+    border: 3px solid $dark-purple;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @include transition;
+    padding: 15px;
+    width: 100%;
+    .project-title, .project-description {
+      max-width: 100%;
+      white-space: pre-wrap;
+      word-wrap: break-word; 
+    }
+    .project-description {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .project-title {
+      font-weight: 600;
+      margin-top: 30px;
+      color: $yellow!important;
+    }
+    .project-topbar {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      margin-top: 10px;
+      margin-right: 10px;
+      display: flex;
+      .project-year {
+        font-size: 10px;
+        font-weight: 700;
+        color: $yellow;
+        border: 2px solid $dark-purple;
+        border-radius: 25px;
+        padding: 5px;
+      }
+      .project-icons {
+        display: flex;
+        .project-icon {
+          font-size: 10px;
+          height: 10px;
+          width: 10px;
+          display: flex;
+          align-items: center;
+          color: $yellow;
+          border: 2px solid $dark-purple;
+          border-radius: 25px;
+          padding: 5px;
+        }
+      }
+
+    }
+  }
+
+  &:hover, &:focus {
+    outline: none;
+    .project-image {
+      background-size: 110%;
+      border-color: $purple;
+    }
+    .project-info {
+      background: $dark-purple;
+      border-color: $purple;
+      .project-year, .project-icons .project-icon {
+        border-color: $purple;
+      }
+    }
+    
+    @include shadow;
+  }
+
+  @media screen and (max-width: 800px) {
+    align-items: center;
+    padding: 0px;
+    width: 100vw;
+    border-bottom: 3px solid $dark-purple;
+    border-radius: 0px;
+    .project-image {
+      min-width: 115px;
+      min-height: 115px;
+      margin-left: 15px;
+      height: 115px;
+      width: 115px;
+      border-radius: 100%;
+      border: 3px solid $dark-purple;
+    }
+    .project-info {
+      border: none;
+      padding-right: 15px;
+      height: 100%;
+      .project-description {
+        font-size: 13px;
+        margin-top: 0px;
+      }
+    }
+    &:hover, &:focus {
+      background: $dark-purple;
+      @include transition;
+      .project-info {
+        background: transparent;
+        border-color: 0px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .project-image {
+      background-size: auto 100%;
+    }
+
+    &:hover, &:focus {
+      .project-image {
+        background-size: auto 110%!important;
+      }
+    }
+  }
+}
