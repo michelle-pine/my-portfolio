@@ -2,7 +2,7 @@
   "name": "michelle-pine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://https://michelle-pine.github.io/portfolio-2020",
+  "homepage": "https://michellepine.com",
   "dependencies": {
     "@khanacademy/react-multi-select": "^0.3.3",
     "font-awesome": "^4.7.0",
