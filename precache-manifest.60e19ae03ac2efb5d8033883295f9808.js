@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce1333220fbdb96b8889526e6154fc85",
+    "revision": "585f68a3dd581ed1400a1c7bfced74b6",
     "url": "/index.html"
   },
   {
-    "revision": "dbdb49c93fa7821baec0",
+    "revision": "9f5debe3820ad28bb3d0",
     "url": "/static/css/2.400f043a.chunk.css"
   },
   {
-    "revision": "2013e02e2108a7e97b28",
-    "url": "/static/css/main.fb8acf21.chunk.css"
+    "revision": "c7d0b9c2fd61ff5fd404",
+    "url": "/static/css/main.648ae178.chunk.css"
   },
   {
-    "revision": "dbdb49c93fa7821baec0",
-    "url": "/static/js/2.f2f9904b.chunk.js"
+    "revision": "9f5debe3820ad28bb3d0",
+    "url": "/static/js/2.040ced9c.chunk.js"
   },
   {
-    "revision": "2013e02e2108a7e97b28",
-    "url": "/static/js/main.082eaf47.chunk.js"
+    "revision": "c7d0b9c2fd61ff5fd404",
+    "url": "/static/js/main.8dab695a.chunk.js"
   },
   {
     "revision": "a1816e83788f636fae95",
@@ -200,6 +200,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/c3po.8942e22e.png"
   },
   {
+    "revision": "5229aed4d044b6a12732101bbf13b53c",
+    "url": "/static/media/cat.5229aed4.gif"
+  },
+  {
     "revision": "48e4b61e7194d37b7fdb655497305497",
     "url": "/static/media/cf-screenshot1.48e4b61e.png"
   },
@@ -214,6 +218,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "389cafe9c1bbe5a116d7c67747ad7949",
     "url": "/static/media/city.389cafe9.svg"
+  },
+  {
+    "revision": "52b43a8193375387089faae4cd889095",
+    "url": "/static/media/colab-preview.52b43a81.png"
+  },
+  {
+    "revision": "e9c11557b14ff69b318b3a4c8a638396",
+    "url": "/static/media/colab-title.e9c11557.png"
   },
   {
     "revision": "6f1aa67842cba0b612abe1f532c3799a",
@@ -324,12 +336,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/starborne.70352ee5.png"
   },
   {
+    "revision": "4054461a79bf83c6e3a5f53a4cb38256",
+    "url": "/static/media/title.4054461a.gif"
+  },
+  {
     "revision": "f9774e9eaae0763b71029af41c7b812d",
     "url": "/static/media/tumblrGraphics.f9774e9e.gif"
   },
   {
     "revision": "6b738e1630602c050667a25a92adc42a",
     "url": "/static/media/windyWeather.6b738e16.png"
+  },
+  {
+    "revision": "023acd623d6353ee02d5bfe4112198c3",
+    "url": "/static/media/wizard.023acd62.gif"
   },
   {
     "revision": "17d8732109a2fffce4ddbe20f4d901cb",
