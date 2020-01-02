@@ -62,7 +62,6 @@ function scrollPastHeader() {
 
 $(function () {
   $("#loader").delay(2000).fadeOut();
-  $("body").delay(2000).css("overflow","auto");
   $(".navbar-link").click(function () {
     scrollPastHeader();
   });
