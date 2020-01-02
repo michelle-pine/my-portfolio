@@ -57,7 +57,7 @@
       margin-right: 20px;
       position: relative;
       #search-box {
-        background: transparent;
+        background: rgba(255, 255, 255, 0);
         border: 0px;
         font-family: $font-stack;
         box-sizing : border-box;
@@ -208,12 +208,19 @@
     }
   }
   .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    .project {
+      width: calc(50% - 15px);
+      margin: 7.5px;
+    }
 
     @media screen and (max-width: 800px) {
       display: block;
+      .project {
+        width: 100%;
+        margin: 0px;
+      }
     }
   }
 }

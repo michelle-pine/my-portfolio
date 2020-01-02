@@ -15,7 +15,27 @@
        -ms-animation: fadein 2s; /* Internet Explorer */
         -o-animation: fadein 2s; /* Opera < 12.1 */
            animation: fadein 2s;
+      overflow: hidden!important;
+     
+    }
+    @media screen and (max-width: 800px) {
+      max-height: none;
+      overflow: hidden!important;
+      max-height: 700px;
+      .contact-frame {
+        border: 0px;
+        margin-top: 0px;
+        height: 1000px;
+        overflow: hidden!important;  
+        noresize: noresize;
+        html {
+          overflow: hidden!important;
+        }
+      }
     }
   }
-  
+}
+
+#form[data-loader-type="viewer"] {
+  min-height: none!important;
 }
