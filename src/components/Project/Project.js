@@ -34,7 +34,7 @@ class Project extends React.Component {
     const Tag = this.props.project.redirect ? ExternalLink : Link;
     const link = this.props.project.redirect ? this.props.project.url : `/projects/${this.props.project.url}`;
     return (
-      <Tag className="project" to={link} target={this.props.project.redirect ? "_blank" : null}>
+      <Tag className={`project ${this.props.single ? "single" : ""}`} to={link} target={this.props.project.redirect ? "_blank" : null}>
         <div className="project-image" style={{backgroundImage: `url(${this.props.project.image})`}}>
         </div>
         <div className="project-info">
@@ -56,6 +56,7 @@ Project.defaultProps = {
 
 Project.propTypes = {
   project: PropTypes.object,
+  single: PropTypes.bool,
 };
 
 export default Project;

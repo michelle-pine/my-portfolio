@@ -11,6 +11,9 @@
   max-height: 250px;
   position: relative;
   min-height: 200px;
+  &.single {
+    width: 100%!important;
+  }
   .project-image {
     overflow: hidden;
     min-width: 50%;

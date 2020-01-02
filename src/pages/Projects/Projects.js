@@ -79,18 +79,19 @@ class Projects extends React.Component {
     }.bind(this));
   }
 
-  renderProjects() {
-    const filteredProjects = this.filterProjects(this.state.yearSelected, this.state.typeSelected, this.state.searchValue);
+  renderProjects(filteredProjects) {
+    
     return filteredProjects.map(function(proj) {
       return <Project 
         project={proj}
+        single={filteredProjects.length === 1}
       />
     });
   }
 
   render() {
-    const {yearSelected, typeSelected} = this.state;
-
+    const {yearSelected, typeSelected, searchValue} = this.state;
+    const filteredProjects = this.filterProjects(yearSelected, typeSelected, searchValue);
     return (
     <div className="projects-page page">
       <Title title="Projects"/>
@@ -136,7 +137,7 @@ class Projects extends React.Component {
         </div>
       </div>
       <div className="projects-container">
-        {this.renderProjects()}
+        {this.renderProjects(filteredProjects)}
       </div>
     </div>
     );
