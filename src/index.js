@@ -8,7 +8,6 @@ import projectList from './data/projects';
 import './index.scss';
 import 'font-awesome/css/font-awesome.min.css'
 
-import App from './App';
 //pages
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -20,7 +19,6 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
-
 
 //images
 import logo from './media/logo.png'
@@ -66,7 +64,7 @@ function scrollPastHeader() {
 
 $(function () {
   $("#loader").delay(2000).fadeOut();
-  $(".navbar-link").click(function () {
+  $(".navbar-left .navbar-link").click(function () {
     scrollPastHeader();
   });
   $(".down-button").click(function () {
