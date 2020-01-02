@@ -70,7 +70,7 @@ $(function () {
   $(".down-button").click(function () {
     scrollPastHeader();
   });
-  $("body").on("click", "a.project", function() {
+  $("body").on("click", "a.project:not([target='_blank'])", function() {
     scrollPastHeader();
   });
   $(window).scroll(function() {    
