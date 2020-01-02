@@ -18,6 +18,7 @@ import TumblrGraphicsImg from '../media/project-media/tumblrGraphics.gif';
 import EmotiquoteImg from '../media/project-media/emotiquote.png';
 import WizardQuestImg from '../media/project-media/wizard-quest/title.gif'
 import CoLabImg from '../media/project-media/colab-title.png'
+import AccessibilityImg from '../media/project-media/accessibility.png'
 
 import {
 	WritingSamples,
@@ -42,6 +43,15 @@ import {
 } from '../projects'
 
 const projects = [
+  {
+    title: "Accessible Front-End Dev",
+    description: "A textbook-style written guide on how to develop accessible front-end HTML and CSS.",
+    image: AccessibilityImg,
+    url: "https://michelle-pine.github.io/accessible-front-end-dev/#introduction",
+    redirect: true,
+    year: 2019,
+    type: ["coding","design", "writing"],
+  },
   {
     title: "WizardQuest",
     description: "A proof-of-concept for a choose-your-own-adventure game that combines animation, audio, geolocation, and web development.",

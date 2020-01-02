@@ -11,7 +11,7 @@
     background: $dark-purple;
     padding: 25px;
     border-radius: 10px;
-    border: 3px solid $purple;
+    border: $border-width solid $purple;
     a {
       color: $yellow;
       @include transition;
@@ -37,7 +37,7 @@
     }
     @media screen and (max-width: 800px) {
       flex-wrap: wrap;
-      border-width: 3px 0px;
+      border-width: $border-width 0px;
       border-radius: 0px;
       .about-bio-image {
         width: 50%;
@@ -51,15 +51,18 @@
   }
   .skill-set {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     max-width: 725px;
     margin: 0 auto;
-    align-items: flex-start;
     .skills {
-      width: 25%;
-      margin-right: 10px;
-      &:last-child {
-        margin-right: 0px;
+      width: calc(50% - 15px);
+      &:nth-child(odd) {
+        margin-right: 15px;
       }
+      margin-bottom: 15px;
+      
+
     }
     @media screen and (max-width: 800px){
       flex-wrap: wrap;
@@ -67,9 +70,9 @@
         width: 100%;
         margin-right: 0px;
         border-radius: 0px;
-        border-width: 3px 0px 0px 0px;
+        border-width: $border-width 0px 0px 0px;
         &:last-child {
-          border-bottom: 3px solid $purple;
+          border-bottom: $border-width solid $purple;
         }
       }
     }
@@ -84,9 +87,9 @@
       .experience {
         margin-bottom:0px;
         border-radius: 0px;
-        border-width: 3px 0px 0px 0px;
+        border-width: $border-width 0px 0px 0px;
         &:last-child {
-          border-bottom: 3px solid $purple;
+          border-bottom: $border-width solid $purple;
         }
       }
     }

@@ -2,9 +2,10 @@
 
 .experience {
   display: flex;
-  border: 3px solid $purple;
+  border: $border-width solid $purple;
   flex-direction: column;
   border-radius: 10px;
+  padding-bottom: 10px;
   .experience-organization, .experience-position {
     h4, h5 {
       margin: 0px;
@@ -12,7 +13,7 @@
   }
   .experience-organization {
     padding: 10px;
-    border-bottom: 3px solid $purple;
+    border-bottom: $border-width solid $purple;
     color: $yellow;
     background: $dark-purple;
 
@@ -22,8 +23,7 @@
     }
   }
   .experience-position {
-    padding: 10px;
-
+    padding: 10px 10px 0px 10px;
     h5 {
       font-size: 14px;
       font-weight: 500;
@@ -35,9 +35,11 @@
     }
   }
   .experience-description {
-    border-top: 3px solid $purple;
     padding: 0px 10px 10px 10px;
     color: rgb(189, 189, 189);
     font-family: "Open Sans", sans-serif;
+    p {
+      margin-bottom: 0px;
+    }
   }
 }

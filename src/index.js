@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, HashRouter as Router } from 'react-router-dom'
+import { Route, Switch, HashRouter as Router } from 'react-router-dom'
 import $ from 'jquery';
 
 import projectList from './data/projects';
@@ -13,6 +13,7 @@ import App from './App';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import NotFound from './pages/NotFound';
 
 //components
 import Navbar from './components/Navbar';
@@ -34,10 +35,13 @@ const routing = (
     <Header />
     <div className="page-content">
       <div className="content-wrapper">
-        <Route exact path="/" component={Projects} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
-        {projectList.filter((project) => !project.redirect).map((project) => <Route exact path={`/projects/${project.url}`} component={project.page} />)}
+        <Switch>
+          <Route exact path="/" component={Projects} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          {projectList.filter((project) => !project.redirect).map((project) => <Route path={`/projects/${project.url}`} component={project.page} />)}
+          <Route path="*" component={NotFound} />
+        </Switch>
         <Footer />
       </div>
     </div>

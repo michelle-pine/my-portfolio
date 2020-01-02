@@ -14,7 +14,7 @@
   .project-image {
     overflow: hidden;
     min-width: 50%;
-    border: 3px solid $dark-purple;
+    border: $border-width solid $dark-purple;
     min-height: 50%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -25,7 +25,7 @@
     background-position: center center;
   }
   .project-info {
-    border: 3px solid $dark-purple;
+    border: $border-width solid $dark-purple;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     @include transition;
@@ -40,7 +40,7 @@
       font-family: 'Open Sans', sans-serif;
     }
     .project-title {
-      font-weight: 600;
+      font-weight: 500;
       margin-top: 30px;
       color: $yellow!important;
     }
@@ -98,8 +98,9 @@
     align-items: center;
     padding: 0px;
     width: 100vw;
-    border-bottom: 3px solid $dark-purple;
+    border-bottom: $border-width solid $dark-purple;
     border-radius: 0px;
+    min-height: 175px;
     .project-image {
       min-width: 115px;
       min-height: 115px;
@@ -107,7 +108,7 @@
       height: 115px;
       width: 115px;
       border-radius: 100%;
-      border: 3px solid $dark-purple;
+      border: $border-width solid $dark-purple;
     }
     .project-info {
       border: none;

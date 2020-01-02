@@ -13,14 +13,9 @@
     margin: 0px 25px 35px 25px;
     width: 45vw;
     background: $dark-purple;
-    border: 3px solid $purple;
+    border: $border-width solid $purple;
     padding: 15px;
     border-radius: 10px;
-    @media screen and (max-width: 800px) {
-      border-radius: 0px;
-      border-bottom: 0px;
-      margin-bottom: 0px;
-    }
     .info-photo {
       min-width: 100px;
       border-radius: 100%;
@@ -35,9 +30,11 @@
       font-family: 'Open Sans', sans-serif;
     }
     @media screen and (max-width: 900px) {
-      width: calc(100% - 40px);
-      border: 3px solid $purple;
+      width: calc(100% - 30px);
+      border-bottom: $border-width 0px 0px 0px;
       margin-left:0px;
+      border-radius: 0px;
+      margin-bottom: 0px;
       margin-right:0px;      
     }
   }
@@ -70,9 +67,9 @@
         text-transform: lowercase;
         color: $white;
         background-color: $dark-purple;
-        font-weight: 600;
+        font-weight: 500;
         border-radius: 25px;
-        border: 3px solid $purple;
+        border: $border-width solid $purple;
         @include transition;
         &::placeholder { 
           color: rgb(170, 170, 170);
@@ -80,7 +77,7 @@
         }
         
         &:focus, &:hover {
-          border: 3px solid $light-purple;
+          border: $border-width solid $light-purple;
           outline: none;
           background-color: $purple;
           + .search-icon {
@@ -122,13 +119,13 @@
       @include transition;
       .dropdown-heading {
         background-color: $dark-purple!important;
-        font-weight: 600;
+        font-weight: 500;
         border-radius: 25px!important;
         color: $yellow!important;
         display: flex;
         align-items: center;
         border-color: $purple!important;
-        border-width: 3px!important;
+        border-width: $border-width!important;
         @include transition;
         text-transform: lowercase;
   
@@ -141,21 +138,21 @@
       .dropdown-content {
         @include transition;
         background-color: $dark-purple!important;
-        font-weight: 600;
+        font-weight: 400;
         border-radius: 10px!important;
         color: $yellow!important;
         border-color: $purple!important;
-        border-width: 3px!important;
+        border-width: $border-width!important;
         margin-top: 5px!important;
   
         .select-item {
           background-color: $dark-purple!important;
-          font-weight: 600;
+          font-weight: 400;
           color: $white!important;
           @include transition;
           text-transform: lowercase!important;
           border-color: $purple!important;
-          border-width: 3px!important;
+          border-width: $border-width!important;
           input[type="checkbox"] {
             visibility: hidden;
             font-size: 1px;

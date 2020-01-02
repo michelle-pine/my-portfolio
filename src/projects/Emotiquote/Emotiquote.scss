@@ -15,7 +15,7 @@
       display: flex;
       flex-direction: column;
       padding: 0;
-      border: 3px solid $purple;
+      border: $border-width solid $purple;
       .emotiquote-accomplishment {
         padding: 10px;
         &.accomplishment-title {
@@ -26,7 +26,7 @@
           }
         }
         &:not(:last-child) {
-          border-bottom: 3px solid $purple;
+          border-bottom: $border-width solid $purple;
         }
         .fa {
           color: $yellow;
@@ -43,7 +43,7 @@
       @media screen and (max-width: 800px) {
         border-radius: 0px;
         margin-bottom: 0px;
-        border-width: 0px 0px 3px 0px;
+        border-width: 0px 0px $border-width 0px;
       }
     }
     @media screen and (max-width: 800px) {

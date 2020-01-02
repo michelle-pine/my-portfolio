@@ -93,7 +93,7 @@ class Projects extends React.Component {
 
     return (
     <div className="projects-page page">
-      <Title title="Projects" />
+      <Title title="Projects"/>
       <div className="info-section">
         <div style={{backgroundImage: `url(${michelle})`}} className="info-photo"/>
         <div className="info-description">

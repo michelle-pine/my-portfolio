@@ -5,6 +5,7 @@ import Title from '../../components/Title';
 import BigLink from '../../components/BigLink';
 import Preview1 from '../../media/project-media/wizard-quest/wizard.gif';
 import Preview2 from '../../media/project-media/wizard-quest/cat.gif';
+import BackButton from '../../components/BackButton';
 
 
 class WizardQuest extends React.Component {
@@ -15,6 +16,7 @@ class WizardQuest extends React.Component {
   render() {
     return (
     <div className='page'>
+      <BackButton history={this.props.history}/>
       <Title title="WizardQuest (2019)"/>
       <div className="page-description">
         <p>An interactive choose-your-own-adventure game created for my Narrative Basics class in 2019. Produced in collaboration with Samantha Silvers and Jonathan Ma, this game combines web development, animation, audio mixing, storytelling to create an immersive spatial narrative. If played as intended, the game can only be played if users visit particular locations on Northeastern's campus, but geolocation has been disabled for off-campus use.</p>

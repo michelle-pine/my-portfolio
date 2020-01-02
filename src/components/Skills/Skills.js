@@ -22,7 +22,9 @@ class Skills extends React.Component {
         <i className={`fa ${this.props.icon}`}></i>
         {this.props.header}
       </div>
-      {this.renderSkills()}
+      <div className="skills-group">
+        {this.renderSkills()}
+      </div>
     </div>
     );
   }

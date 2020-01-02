@@ -7,6 +7,10 @@ class Title extends React.Component {
     super(props)
   }
 
+  componentDidMount() {
+    document.title = `${this.props.overrideTitle || this.props.title} - Michelle Pine`
+  }
+
   render() {
     return (
       <h2 className="title">{this.props.title}</h2>
@@ -20,6 +24,7 @@ Title.defaultProps = {
 
 Title.propTypes = {
   title: PropTypes.string,
+  overrideTitle: PropTypes.string,
 };
 
 export default Title;

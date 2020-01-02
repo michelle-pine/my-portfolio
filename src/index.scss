@@ -8,6 +8,7 @@ $yellow: #ffff66;
 $purple: #5736A7;
 $light-purple: #7A11FF;
 $white: #FFF;
+$border-width: 2px;
 
 @mixin transition {
   transition: 0.3s all;
@@ -64,7 +65,7 @@ body {
     max-width: 700px;
     margin: 0 auto;
     background: $dark-purple;
-    border: 3px solid $purple;
+    border: $border-width solid $purple;
     font-family: 'Open Sans', sans-serif;
     padding: 15px;
     border-radius: 10px;
@@ -95,7 +96,7 @@ body {
     img {
       max-width: 725px;
       width: 100%;
-      border: 3px solid $purple;
+      border: $border-width solid $purple;
       border-radius: 10px;
       
     }
@@ -324,4 +325,8 @@ $shadows-big:    multiple-box-shadow(100);
 @-o-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+strong {
+  font-weight: 600;
 }
