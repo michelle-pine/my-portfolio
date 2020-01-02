@@ -14,7 +14,7 @@ class WindyWeather extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="Windy Weather" />
+      <Title title="Windy Weather (2017)" />
       <div className="page-description">
         <p>An animated wind speed visualizer, created using the APIXU Weather API, Adobe Illustrator, and the p5 Javascript library!</p>
       </div>

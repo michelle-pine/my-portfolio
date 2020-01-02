@@ -15,7 +15,7 @@ class WritingSamples extends React.Component {
     return (
     <div className='page writing-samples'>
       <BackButton history={this.props.history}/>
-      <Title title="Writing Samples" />
+      <Title title="Writing Samples (2019)" />
       <div className="page-description">
         For Northeastern's Interdisciplinary Advanced Writing class, students are required to complete several writing projects. You may find these writing projects below.
       </div>

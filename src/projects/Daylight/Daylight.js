@@ -15,7 +15,7 @@ class Daylight extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="Daylight" />
+      <Title title="Daylight (2018)" />
       <div className="page-description">
         <p>My first responsive Tumblr theme, featuring the newly-released Bootstrap 4, FontAwesome icons, (of course) gradients, and a whole new layout style! A revamp of Starborne that is far less minimalist than the original.</p>
       </div>

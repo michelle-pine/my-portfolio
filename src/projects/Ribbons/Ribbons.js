@@ -15,7 +15,7 @@ class Ribbons extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="Ribbons" />
+      <Title title="Ribbons (2017)" />
       <div className="page-description">
         <p>A striking Tumblr theme that practically glows. Use colors and dynamic hover effects to beautify your blog. Developed in HTML and CSS.</p>
       </div>

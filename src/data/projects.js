@@ -16,6 +16,8 @@ import PhasesImg from '../media/project-media/phases.png';
 import PJGraphicsImg from '../media/project-media/grinspoonGraphics.jpg';
 import TumblrGraphicsImg from '../media/project-media/tumblrGraphics.gif';
 import EmotiquoteImg from '../media/project-media/emotiquote.png';
+import WizardQuestImg from '../media/project-media/wizard-quest/title.gif'
+import CoLabImg from '../media/project-media/colab-title.png'
 
 import {
 	WritingSamples,
@@ -34,10 +36,30 @@ import {
 	WindyWeather,
 	Starborne,
 	Phases,
-	PjGraphics,
+  PjGraphics,
+  WizardQuest,
+  CoLab,
 } from '../projects'
 
 const projects = [
+  {
+    title: "WizardQuest",
+    description: "A proof-of-concept for a choose-your-own-adventure game that combines animation, audio, geolocation, and web development.",
+    image: WizardQuestImg,
+    page: WizardQuest,
+    url: "wizard-quest",
+    year: 2019,
+    type: ["coding","design"],
+  },
+  {
+    title: "CoLab",
+    description: "The UI for a university-wide collaboration system, built in React and Redux.",
+    image: CoLabImg,
+    page: CoLab,
+    url: "colab",
+    year: 2019,
+    type: ["coding","design"],
+  },
   {
     title: "Writing Samples",
     description: "Documents created for Northeastern's Interdisciplinary Advanced Writing class.",

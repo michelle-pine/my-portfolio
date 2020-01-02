@@ -16,7 +16,7 @@ class MazeGame extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="The Maze Game" />
+      <Title title="The Maze Game (2017)" />
       <div className="page-description">
         <p>Escape the island before it's too late! This arcade game, coded in Java, tests the player's survival skills in a race against time as the waters rise.</p>
       </div>

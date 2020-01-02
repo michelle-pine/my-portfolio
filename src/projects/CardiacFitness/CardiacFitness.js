@@ -17,7 +17,7 @@ class CardiacFitness extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="Cardiac Fitness" />
+      <Title title="Cardiac Fitness (2018)" />
       <div className="page-description">
         <p>In 2018, while I was on co-op at Boston Children's Hospital, I helped develop the front-end of a fitness application intended to help children with heart problems improve their fitness! This project was mocked-up in Balsamiq, prototyped with Invision and HTML, and developed in Angular.</p>
       </div>

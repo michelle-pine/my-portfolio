@@ -16,7 +16,7 @@ class Emotiquote extends React.Component {
     return (
     <div className='page emotiquote'>
       <BackButton history={this.props.history}/>
-      <Title title="Emotiquote" />
+      <Title title="Emotiquote (2018)" />
       <div className="page-description">
         <p>A ReactJS application for analyzing the emotions of famous (and not-so-famous) people, books, movies, and TV shows. Utilizes the extensive data contained in the Mediawiki API and takes advantage of the Indico API's emotional machine learning. Made in collaboration with Abigail Hodge, Samantha Price, and Sharon He.</p>
       </div>

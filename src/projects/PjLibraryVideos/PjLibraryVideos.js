@@ -13,7 +13,7 @@ class PjLibraryVideos extends React.Component {
     return (
     <div className='page pj-library-videos'>
       <BackButton history={this.props.history}/>
-      <Title title="PJ Library Videos" />
+      <Title title="PJ Library Videos (2017)" />
       <div className="page-description">
         <p>These professional-quality videos were made using Adobe Premiere Pro and Adobe Photoshop for the Harold Grinspoon Foundation, a non-profit which promotes Jewish cultural engagement. The videos were displayed on social media to market their PJ Library program to parents and children. All image and music rights belong to the foundation.</p>
       </div>

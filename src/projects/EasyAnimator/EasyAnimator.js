@@ -16,7 +16,7 @@ class EasyAnimator extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="The Easy Animator" />
+      <Title title="The Easy Animator (2017)" />
       <div className="page-description">
         <p>A complex animator software which takes textual instructions as an input and outputs a working visual animation. Coded in Java with the Swing Library, this software can produce a textual description of the animation, an interactive animation, or an svg animation per the user's preference. This project was completed in collaboration with Abigail Hodge.</p>
       </div>

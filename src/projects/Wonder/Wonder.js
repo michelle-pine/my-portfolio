@@ -15,7 +15,7 @@ class Wonder extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="Wonder" />
+      <Title title="Wonder (2017)" />
       <div className="page-description">
         <p>An extremely colorful, responsive Tumblr theme featuring bright gradients and tons of hover effects. Developed in HTML and CSS. The code alone has over 4,500 hits on Pastebin, and 1,400 notes on Tumblr.</p>
       </div>

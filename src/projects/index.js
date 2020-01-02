@@ -1,4 +1,6 @@
 /* PLOP_INJECT_IMPORT */
+import CoLab from './CoLab';
+import WizardQuest from './WizardQuest';
 import WritingSamples from './WritingSamples';
 import C3Po from './C3Po';
 import CardiacFitness from './CardiacFitness';
@@ -19,6 +21,8 @@ import PjGraphics from './PjGraphics';
 
 export {
   /* PLOP_INJECT_EXPORT */
+	CoLab,
+	WizardQuest,
 	WritingSamples,
 	C3Po,
 	CardiacFitness,

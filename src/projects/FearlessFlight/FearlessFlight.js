@@ -17,7 +17,7 @@ class FearlessFlight extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="Fearless Flight" />
+      <Title title="Fearless Flight (2017)" />
       <div className="page-description">
         <p>Boldly soar across the sky, dodging obstacles and shooting down adversaries to reach your goals! Fearless Flight is the fun and exciting game for the fighter pilot in all of us!</p>
       </div>

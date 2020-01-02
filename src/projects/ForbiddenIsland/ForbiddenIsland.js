@@ -16,7 +16,7 @@ class ForbiddenIsland extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="The Forbidden Island" />
+      <Title title="The Forbidden Island (2017)" />
       <div className="page-description">
         <p>A maze generator/solver game that utilizes Kruskal's Algorithm, breadth-first search, and depth-first search. Developed in Java.</p>
       </div>

@@ -15,7 +15,7 @@ class Phases extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="Phases" />
+      <Title title="Phases (2016)" />
       <div className="page-description">
         <p>A colorful, interactive theme for Tumblr bloggers of all kinds! Developed in HTML and CSS.</p>
       </div>

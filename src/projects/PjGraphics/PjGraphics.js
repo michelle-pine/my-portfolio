@@ -30,7 +30,7 @@ class PjGraphics extends React.Component {
     return (
     <div className='page pj-graphics'>
       <BackButton history={this.props.history}/>
-      <Title title="PJ Graphics" />
+      <Title title="PJ Graphics (2016)" />
       <div className="page-description">
         <p>A series of graphics designed for the Harold Grinspoon Foundation's social media.</p>
       </div>

@@ -15,7 +15,7 @@ class Starborne extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="Starborne" />
+      <Title title="Starborne (2016)" />
       <div className="page-description">
         <p>Clean up your blog with this minimalistic but still colorful Tumblr theme. Developed in HTML and CSS.</p>
       </div>
