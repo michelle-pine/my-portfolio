@@ -21,7 +21,7 @@ class CoLab extends React.Component {
         <p>The UI design for an online platform that allows computer science students—as well as students in other fields—to find students with complementary skills with whom to work on portfolio projects. Developed for my Human Computer Interaction class.</p>
       </div>
       <a href={Preview} target="_blank" className="page-image-wrapper"><img src={Preview}/></a>
-      <BigLink to="https://michelle-pine.github.io/colab" icon="fa-tumblr" text="View Demo"/>
+      <BigLink to="https://michelle-pine.github.io/colab" icon="fa-laptop" text="View Demo"/>
       <BigLink to="https://github.com/michelle-pine/colab" text="View Github Code" icon="fa-github"/>
     </div>
     );
