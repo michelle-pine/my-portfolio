@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.58ffdd91.chunk.css",
-    "main.js": "/static/js/main.01ae24de.chunk.js",
-    "main.js.map": "/static/js/main.01ae24de.chunk.js.map",
+    "main.css": "/static/css/main.1333ec25.chunk.css",
+    "main.js": "/static/js/main.e5c02c92.chunk.js",
+    "main.js.map": "/static/js/main.e5c02c92.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ad22c8b6.js",
     "runtime-main.js.map": "/static/js/runtime-main.ad22c8b6.js.map",
     "static/css/2.400f043a.chunk.css": "/static/css/2.400f043a.chunk.css",
-    "static/js/2.0f69dca2.chunk.js": "/static/js/2.0f69dca2.chunk.js",
-    "static/js/2.0f69dca2.chunk.js.map": "/static/js/2.0f69dca2.chunk.js.map",
+    "static/js/2.39fe570f.chunk.js": "/static/js/2.39fe570f.chunk.js",
+    "static/js/2.39fe570f.chunk.js.map": "/static/js/2.39fe570f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e7f4f366aaf597f9da65510e1ef2bc60.js": "/precache-manifest.e7f4f366aaf597f9da65510e1ef2bc60.js",
+    "precache-manifest.7c70ecd4d4adee897fef45c4276595d3.js": "/precache-manifest.7c70ecd4d4adee897fef45c4276595d3.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.400f043a.chunk.css.map": "/static/css/2.400f043a.chunk.css.map",
-    "static/css/main.58ffdd91.chunk.css.map": "/static/css/main.58ffdd91.chunk.css.map",
+    "static/css/main.1333ec25.chunk.css.map": "/static/css/main.1333ec25.chunk.css.map",
     "static/media/1.png": "/static/media/1.fca64bd8.png",
     "static/media/10.png": "/static/media/10.f46e60c3.png",
     "static/media/11.png": "/static/media/11.3ded6126.png",
@@ -88,6 +88,7 @@
     "static/media/starborne.png": "/static/media/starborne.70352ee5.png",
     "static/media/title.gif": "/static/media/title.4054461a.gif",
     "static/media/tumblrGraphics.gif": "/static/media/tumblrGraphics.f9774e9e.gif",
+    "static/media/visualizer-title.gif": "/static/media/visualizer-title.5ca4d412.gif",
     "static/media/windyWeather.png": "/static/media/windyWeather.6b738e16.png",
     "static/media/wizard.gif": "/static/media/wizard.023acd62.gif",
     "static/media/wonder-view.png": "/static/media/wonder-view.17d87321.png",
@@ -96,8 +97,8 @@
   "entrypoints": [
     "static/js/runtime-main.ad22c8b6.js",
     "static/css/2.400f043a.chunk.css",
-    "static/js/2.0f69dca2.chunk.js",
-    "static/css/main.58ffdd91.chunk.css",
-    "static/js/main.01ae24de.chunk.js"
+    "static/js/2.39fe570f.chunk.js",
+    "static/css/main.1333ec25.chunk.css",
+    "static/js/main.e5c02c92.chunk.js"
   ]
 }
