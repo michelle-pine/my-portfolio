@@ -19,6 +19,7 @@ import EmotiquoteImg from '../media/project-media/emotiquote.png';
 import WizardQuestImg from '../media/project-media/wizard-quest/title.gif'
 import CoLabImg from '../media/project-media/colab-title.png'
 import AccessibilityImg from '../media/project-media/accessibility.png'
+import MusicVisualizerImg from '../media/project-media/visualizer-title.gif'
 
 import {
 	WritingSamples,
@@ -40,6 +41,7 @@ import {
   PjGraphics,
   WizardQuest,
   CoLab,
+  MusicVisualizer
 } from '../projects'
 
 const projects = [
@@ -78,6 +80,15 @@ const projects = [
     url: "writing-samples",
     year: 2019,
     type: ["writing"],
+  },
+  {
+    title: "nuWIT Music Visualizer",
+    description: "A music visualizer designed for Northeastern University Women in Technology (nuWIT), created using Javascript canvas and the spotify-viz project.",
+    image: MusicVisualizerImg,
+    page: MusicVisualizer,
+    url: "music-visualizer",
+    year: 2019,
+    type: ["coding", "design"],
   },
   {
     title: "C3PO-R3",

@@ -1,4 +1,5 @@
 /* PLOP_INJECT_IMPORT */
+import MusicVisualizer from './MusicVisualizer';
 import CoLab from './CoLab';
 import WizardQuest from './WizardQuest';
 import WritingSamples from './WritingSamples';
@@ -21,6 +22,7 @@ import PjGraphics from './PjGraphics';
 
 export {
   /* PLOP_INJECT_EXPORT */
+	MusicVisualizer,
 	CoLab,
 	WizardQuest,
 	WritingSamples,
