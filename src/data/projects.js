@@ -83,7 +83,7 @@ const projects = [
   },
   {
     title: "nuWIT Music Visualizer",
-    description: "A music visualizer designed for Northeastern University Women in Technology (nuWIT), created using Javascript canvas and the spotify-viz project.",
+    description: "A music visualizer designed for Northeastern University Women in Technology (nuWIT), created using HTML5 canvas and the spotify-viz project.",
     image: MusicVisualizerImg,
     page: MusicVisualizer,
     url: "music-visualizer",
