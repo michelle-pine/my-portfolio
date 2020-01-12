@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83eccd60f456f5e1ea09382e7188ef42",
+    "revision": "f269cc0cce7e63c1624a18860b13757d",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.400f043a.chunk.css"
   },
   {
-    "revision": "be409f4fb3b02f0ad9cb",
-    "url": "/static/css/main.efcf2e76.chunk.css"
+    "revision": "8e744c21f22e0d06a804",
+    "url": "/static/css/main.115b2e5a.chunk.css"
   },
   {
     "revision": "d9fdfe765d3351982f55",
     "url": "/static/js/2.39fe570f.chunk.js"
   },
   {
-    "revision": "be409f4fb3b02f0ad9cb",
-    "url": "/static/js/main.be2d70a5.chunk.js"
+    "revision": "8e744c21f22e0d06a804",
+    "url": "/static/js/main.c8abf021.chunk.js"
   },
   {
     "revision": "a1816e83788f636fae95",
@@ -184,8 +184,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/advanced-writing.7db216d5.svg"
   },
   {
-    "revision": "080c582628ab82c4840af652ac5b6e17",
-    "url": "/static/media/bio-pic.080c5826.png"
+    "revision": "53c07daf42aaefa58cae07430f531173",
+    "url": "/static/media/bio-pic.53c07daf.png"
   },
   {
     "revision": "7e9dba9bc85304f57a722eb52b883436",
@@ -308,8 +308,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/maze-game.cb22f20f.png"
   },
   {
-    "revision": "033bd48ae72a99b43a1de2d8a6007360",
-    "url": "/static/media/michelle1.033bd48a.jpeg"
+    "revision": "9a41e35796463d907b561e6eecdbb79c",
+    "url": "/static/media/michelle1.9a41e357.jpeg"
   },
   {
     "revision": "68f16e117e0c645520a32aca49902ba5",

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.efcf2e76.chunk.css",
-    "main.js": "/static/js/main.be2d70a5.chunk.js",
-    "main.js.map": "/static/js/main.be2d70a5.chunk.js.map",
+    "main.css": "/static/css/main.115b2e5a.chunk.css",
+    "main.js": "/static/js/main.c8abf021.chunk.js",
+    "main.js.map": "/static/js/main.c8abf021.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ad22c8b6.js",
     "runtime-main.js.map": "/static/js/runtime-main.ad22c8b6.js.map",
     "static/css/2.400f043a.chunk.css": "/static/css/2.400f043a.chunk.css",
     "static/js/2.39fe570f.chunk.js": "/static/js/2.39fe570f.chunk.js",
     "static/js/2.39fe570f.chunk.js.map": "/static/js/2.39fe570f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1ff16b0419219a1bafa3ac911010ca8d.js": "/precache-manifest.1ff16b0419219a1bafa3ac911010ca8d.js",
+    "precache-manifest.00dc4d2a59f708a35aacf9053f052bc7.js": "/precache-manifest.00dc4d2a59f708a35aacf9053f052bc7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.400f043a.chunk.css.map": "/static/css/2.400f043a.chunk.css.map",
-    "static/css/main.efcf2e76.chunk.css.map": "/static/css/main.efcf2e76.chunk.css.map",
+    "static/css/main.115b2e5a.chunk.css.map": "/static/css/main.115b2e5a.chunk.css.map",
     "static/media/1.png": "/static/media/1.fca64bd8.png",
     "static/media/10.png": "/static/media/10.f46e60c3.png",
     "static/media/11.png": "/static/media/11.3ded6126.png",
@@ -51,7 +51,7 @@
     "static/media/adv-writing-1.pdf": "/static/media/adv-writing-1.4f4e81c4.pdf",
     "static/media/adv-writing-3.pdf": "/static/media/adv-writing-3.d563bc2c.pdf",
     "static/media/advanced-writing.svg": "/static/media/advanced-writing.7db216d5.svg",
-    "static/media/About.scss": "/static/media/bio-pic.080c5826.png",
+    "static/media/About.scss": "/static/media/bio-pic.53c07daf.png",
     "static/media/blankets-view.png": "/static/media/blankets-view.7e9dba9b.png",
     "static/media/blanketsForBoston.png": "/static/media/blanketsForBoston.151b7e13.png",
     "static/media/c3po-screenshot.png": "/static/media/c3po-screenshot.d06460eb.png",
@@ -78,7 +78,7 @@
     "static/media/logo2.png": "/static/media/logo2.ce3a3533.png",
     "static/media/logo_1.png": "/static/media/logo_1.b59a53ab.png",
     "static/media/maze-game.png": "/static/media/maze-game.cb22f20f.png",
-    "static/media/michelle1.jpeg": "/static/media/michelle1.033bd48a.jpeg",
+    "static/media/michelle1.jpeg": "/static/media/michelle1.9a41e357.jpeg",
     "static/media/phases-view.png": "/static/media/phases-view.68f16e11.png",
     "static/media/phases.png": "/static/media/phases.63818a0f.png",
     "static/media/pjLibraryVideos.jpeg": "/static/media/pjLibraryVideos.1b7fcb2f.jpeg",
@@ -98,7 +98,7 @@
     "static/js/runtime-main.ad22c8b6.js",
     "static/css/2.400f043a.chunk.css",
     "static/js/2.39fe570f.chunk.js",
-    "static/css/main.efcf2e76.chunk.css",
-    "static/js/main.be2d70a5.chunk.js"
+    "static/css/main.115b2e5a.chunk.css",
+    "static/js/main.c8abf021.chunk.js"
   ]
 }
