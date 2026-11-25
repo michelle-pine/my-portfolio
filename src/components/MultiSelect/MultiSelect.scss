@@ -50,6 +50,8 @@
     align-items: center;
     gap: 10px;
     padding: 8px 15px;
+    font-family: $display-font;
+    letter-spacing: 0.03em;
     color: $white;
     text-transform: lowercase;
     cursor: pointer;
