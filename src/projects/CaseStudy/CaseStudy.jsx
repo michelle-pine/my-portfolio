@@ -16,6 +16,7 @@ export default function CaseStudy({ caseStudy }) {
     summary,
     highlights,
     image,
+    hero,
     gallery = [],
     links = [],
     note = DEFAULT_NOTE,
@@ -25,9 +26,20 @@ export default function CaseStudy({ caseStudy }) {
     <div className="page case-study">
       <BackButton />
       <Title title={`${title} (${year})`} overrideTitle={title} />
-      <div className="page-image-wrapper no-zoom">
-        <img src={image} alt="" />
-      </div>
+      {hero ? (
+        <a
+          href={hero.src}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="page-image-wrapper case-study-hero"
+        >
+          <img src={hero.src} alt={hero.alt} />
+        </a>
+      ) : (
+        <div className="page-image-wrapper no-zoom">
+          <img src={image} alt="" />
+        </div>
+      )}
       <dl className="case-study-meta">
         <div>
           <dt>Organization</dt>
@@ -107,6 +119,7 @@ CaseStudy.propTypes = {
     summary: PropTypes.arrayOf(PropTypes.string).isRequired,
     highlights: PropTypes.arrayOf(PropTypes.string).isRequired,
     image: PropTypes.string.isRequired,
+    hero: PropTypes.shape({ src: PropTypes.string.isRequired, alt: PropTypes.string.isRequired }),
     gallery: PropTypes.arrayOf(
       PropTypes.shape({
         src: PropTypes.string.isRequired,

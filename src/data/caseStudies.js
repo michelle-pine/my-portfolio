@@ -4,10 +4,11 @@ import AiMigrationsImg from '../media/project-media/case-studies/ai-migrations.s
 import DataModelImg from '../media/project-media/case-studies/data-model.svg';
 import UpgradeFlowsImg from '../media/project-media/case-studies/upgrade-flows.svg';
 import EmailEditorImg from '../media/project-media/case-studies/email-editor.svg';
-import ComponentLibraryImg from '../media/project-media/case-studies/component-library.svg';
 import BookBubHomeImg from '../media/project-media/bookbub/home.webp';
 import BookBubBookPageImg from '../media/project-media/bookbub/book-page.webp';
 import BookBubDealsImg from '../media/project-media/bookbub/deals.webp';
+import BookBubEmailImg from '../media/project-media/bookbub/email.webp';
+import BookBubCoverImg from '../media/project-media/bookbub/cover.webp';
 
 // Professional work, shown as case studies. Each entry renders with the shared
 // CaseStudy page, so adding one only requires data and a cover image.
@@ -145,7 +146,7 @@ const caseStudies = [
     url: 'bookbub-component-library',
     year: 2019,
     type: ['professional', 'coding', 'design'],
-    image: ComponentLibraryImg,
+    image: BookBubCoverImg,
     description:
       'The reusable, accessible UI component library that makes up the BookBub website, built to internal design specifications.',
     tags: ['component library', 'design system', 'accessibility', 'react', 'ruby on rails', 'postgresql', 'bookbub'],
@@ -164,12 +165,11 @@ const caseStudies = [
         'Engineered dynamic mass-marketing email templates powered by a Clojure templating system and internal REST APIs.',
       ],
       stack: ['React', 'Ruby on Rails', 'PostgreSQL', 'Clojure', 'REST APIs', 'WCAG'],
+      hero: {
+        src: BookBubHomeImg,
+        alt: 'BookBub home page with a navigation header, three featured deal collections, category filter pills, and a wishlist sidebar.',
+      },
       gallery: [
-        {
-          src: BookBubHomeImg,
-          alt: 'BookBub home page with a navigation header, three featured deal collections, category filter pills, and a wishlist sidebar.',
-          caption: 'Home page: header and search, featured collections, category filters, and the wishlist panel.',
-        },
         {
           src: BookBubDealsImg,
           alt: 'Grid of discounted book deal cards with covers, titles, authors, genres, and prices, beside wishlist and followed-author panels.',
@@ -179,6 +179,11 @@ const caseStudies = [
           src: BookBubBookPageImg,
           alt: 'A book detail page showing the cover, title, authors, star rating, description, a deal price card, and wishlist, review, and share actions.',
           caption: 'Book page: cover, ratings, description, deal pricing, and wishlist, review, and share actions.',
+        },
+        {
+          src: BookBubEmailImg,
+          alt: 'A BookBub deal email featuring Black Leopard, Red Wolf by Marlon James, with a description, a personalized "Because you\'re interested in Fantasy" note, a $1.99 price, and an Amazon button.',
+          caption: 'Personalized deal email built with the Clojure templating system.',
         },
       ],
       links: [{ to: 'https://www.bookbub.com', text: 'Visit BookBub', icon: 'fa-globe' }],

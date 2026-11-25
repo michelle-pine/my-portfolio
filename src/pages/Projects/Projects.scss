@@ -54,54 +54,18 @@
       margin-right: 20px;
       position: relative;
       #search-box {
-        background: rgba(255, 255, 255, 0);
-        border: 0px;
-        font-family: $font-stack;
-        box-sizing : border-box;
-        font-size: 14px;
-        min-width: 100%;
-        max-width: 100%;
-        text-align: center;
-        padding: 5px 10px;
-        padding-top: 7px;
-        text-transform: lowercase;
-        color: $white;
-        background-color: $dark-purple;
-        font-weight: 500;
-        border-radius: 25px;
-        border: $border-width solid $purple;
-        @include transition;
-        &::placeholder { 
-          color: rgb(170, 170, 170);
+        @include filter-control;
+        &::placeholder {
+          color: $filter-placeholder;
           opacity: 1;
         }
-        
-        &:focus, &:hover {
-          border: $border-width solid $light-purple;
-          background-color: $purple;
-          + .search-icon {
-            color: $yellow;
-          }
-        }
-        + .search-icon {
-          @include transition;
-          position: absolute;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          right: 15px;
-          top: 10px;
-          color: rgb(170, 170, 170);
+        &:focus,
+        &:hover {
+          @include filter-control-active;
         }
       }
-      @media screen and (max-width: 450px) { 
-        width: 100%;
-        max-width: none;
-        margin: 0;
-        margin-bottom: 15px;
-        #search-box {
-          border-radius: 0px;
-        }
+      .search-icon {
+        @include filter-icon;
       }
      
     }

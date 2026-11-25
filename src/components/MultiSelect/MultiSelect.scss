@@ -5,21 +5,11 @@
   text-align: left;
 
   .multi-select-heading {
-    @include transition;
+    @include filter-control;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    width: 100%;
-    padding: 7px 15px 5px;
-    font-family: $font-stack;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: lowercase;
-    color: rgb(170, 170, 170);
-    background-color: $dark-purple;
-    border: $border-width solid $purple;
-    border-radius: 25px;
+    color: $filter-placeholder;
     cursor: pointer;
 
     &.has-value {
@@ -31,15 +21,12 @@
       text-overflow: ellipsis;
     }
     i {
-      color: $yellow;
-      font-size: 11px;
+      @include filter-icon;
     }
     &:hover,
     &:focus-visible,
     &[aria-expanded='true'] {
-      background-color: $purple;
-      border-color: $light-purple;
-      color: $white;
+      @include filter-control-active;
     }
   }
 

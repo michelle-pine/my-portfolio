@@ -61,3 +61,40 @@ $body-weight: 300;
   font-family: $body-font;
   font-weight: $body-weight;
 }
+
+// Shared look for the project search box and filter dropdowns, so all three
+// controls match: same height, padding, type, colours, icon, and states.
+$filter-height: 36px;
+$filter-placeholder: rgb(176, 176, 176);
+@mixin filter-control {
+  box-sizing: border-box;
+  width: 100%;
+  height: $filter-height;
+  padding: 0 38px 0 16px;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: lowercase;
+  color: $white;
+  background-color: $dark-purple;
+  border: $border-width solid $purple;
+  border-radius: 25px;
+  @include transition;
+}
+@mixin filter-control-active {
+  background-color: $purple;
+  border-color: $light-purple;
+  color: $white;
+}
+// Trailing icon (search magnifier or dropdown chevron).
+@mixin filter-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  line-height: 1;
+  color: $yellow;
+  pointer-events: none;
+}
