@@ -19,6 +19,7 @@ export default function CaseStudy({ caseStudy }) {
     hero,
     gallery = [],
     links = [],
+    quote,
     note = DEFAULT_NOTE,
   } = caseStudy;
 
@@ -58,6 +59,16 @@ export default function CaseStudy({ caseStudy }) {
         {summary.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
+        {quote && (
+          <figure className="case-study-quote">
+            <blockquote>
+              <p>“{quote.text}”</p>
+            </blockquote>
+            <figcaption>
+              — <a href={quote.href} target="_blank" rel="noopener noreferrer">{quote.source}</a>
+            </figcaption>
+          </figure>
+        )}
         <h3>Highlights</h3>
         <ul>
           {highlights.map((item) => (
@@ -127,6 +138,11 @@ CaseStudy.propTypes = {
         caption: PropTypes.string,
       })
     ),
+    quote: PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      source: PropTypes.string.isRequired,
+      href: PropTypes.string.isRequired,
+    }),
     links: PropTypes.arrayOf(
       PropTypes.shape({ to: PropTypes.string, text: PropTypes.string, icon: PropTypes.string })
     ),

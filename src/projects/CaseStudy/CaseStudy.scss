@@ -105,6 +105,26 @@
     }
   }
 
+  .case-study-quote {
+    margin: 20px 0 5px;
+    padding: 12px 18px;
+    border-left: 4px solid $yellow;
+    background: rgba(1, 8, 45, 0.45);
+    border-radius: 0 8px 8px 0;
+    blockquote {
+      margin: 0;
+      p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+    figcaption {
+      margin-top: 8px;
+      font-size: 13px;
+    }
+  }
+
   .case-study-note i {
     color: $yellow;
     margin-right: 4px;

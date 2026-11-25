@@ -20,8 +20,8 @@ const caseStudies = [
     type: ['professional', 'coding', 'design'],
     image: DesignSystemImg,
     description:
-      "Led the migration of 200+ UI components to a token-based design system across roughly 2,000 frontend applications—the largest migration in HubSpot's history.",
-    tags: ['design tokens', 'codemods', 'accessibility', 'react', 'typescript', 'hubspot'],
+      "Led the migration of 200+ UI components to a token-based design system across roughly 2,000 frontend applications—the foundation for HubSpot's 2026 product redesign.",
+    tags: ['design tokens', 'codemods', 'accessibility', 'react', 'typescript', 'hubspot', 'redesign', 'wcag'],
     caseStudy: {
       organization: 'HubSpot',
       role: 'Frontend Technical Lead II – Design System',
@@ -29,7 +29,13 @@ const caseStudies = [
       summary: [
         "As a technical lead on HubSpot's Design System team, I help maintain the company's most widely adopted evergreen UI library: a mission-critical dependency that powers thousands of downstream applications and shared libraries.",
         'I led and enabled a company-wide migration of 200+ UI components to a token-based design system, shaping component APIs so the migration could be automated with codemods across roughly 2,000 frontend applications.',
+        "That migration is the foundation for HubSpot's new product design, which entered public beta on June 30, 2026 and reached every customer on August 31, 2026. The refresh updated colors, typography, border radii, icons, spacing, elevation, and motion across the CRM. It also retired orange primary buttons because orange on white doesn't meet WCAG 2.1 AA contrast.",
       ],
+      quote: {
+        text: 'When you have hundreds of components each behaving in its own way, there\'s no realistic path to making them accessible one by one.',
+        source: 'Eye-Able, “HubSpot drops orange”',
+        href: 'https://eye-able.com/blog/hubspot-drops-orange-how-accessibility-reshaped-the-crm-s-design',
+      },
       highlights: [
         "Drove the largest migration in HubSpot's history, spanning roughly 2,000 frontend applications.",
         'Optimized component APIs for automated codemod compatibility.',
@@ -37,6 +43,18 @@ const caseStudies = [
         'Partnered with principal designers and cross-functional engineering teams to architect and roll out modernized, accessible component libraries.',
       ],
       stack: ['React', 'TypeScript', 'Design Tokens', 'Codemods', 'WCAG', 'Figma'],
+      links: [
+        {
+          to: 'https://community.hubspot.com/t/hubspots-new-design-brings-your-work-into-focus/151517',
+          text: "HubSpot's redesign announcement",
+          icon: 'fa-bullhorn',
+        },
+        {
+          to: 'https://eye-able.com/blog/hubspot-drops-orange-how-accessibility-reshaped-the-crm-s-design',
+          text: 'Eye-Able: how accessibility reshaped HubSpot',
+          icon: 'fa-newspaper-o',
+        },
+      ],
     },
   },
   {
