@@ -46,6 +46,7 @@
 
   .multi-select-item {
     @include transition;
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -56,26 +57,45 @@
     text-transform: lowercase;
     cursor: pointer;
 
-    input[type='checkbox'] {
-      appearance: none;
-      width: 14px;
-      height: 14px;
+    // The real checkbox stays in the page for keyboard and screen readers but
+    // is visually hidden; the sibling .multi-select-box draws it. (Pseudo-
+    // elements on <input> only render in Chromium, so they can't be used.)
+    .multi-select-input {
+      position: absolute;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
       margin: 0;
-      border: $border-width solid $purple;
-      border-radius: 3px;
-      display: grid;
-      place-content: center;
-      cursor: pointer;
-      &:checked::after {
-        content: '✔';
-        color: $yellow;
-        font-size: 11px;
-        line-height: 1;
+    }
+    .multi-select-box {
+      flex-shrink: 0;
+      position: relative;
+      width: 16px;
+      height: 16px;
+      box-sizing: border-box;
+      border: $border-width solid $light-purple;
+      border-radius: 4px;
+      background: $darkest-purple;
+    }
+    // Checkmark: a rotated L drawn with borders.
+    .multi-select-input:checked + .multi-select-box {
+      background: $yellow;
+      border-color: $yellow;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 0px;
+        width: 4px;
+        height: 8px;
+        border: solid $darkest-purple;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
       }
-      &:focus-visible {
-        outline: 2px solid $yellow;
-        outline-offset: 2px;
-      }
+    }
+    .multi-select-input:focus-visible + .multi-select-box {
+      outline: 3px solid $yellow;
+      outline-offset: 2px;
     }
     &:hover,
     &:focus-within {

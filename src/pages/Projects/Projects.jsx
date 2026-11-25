@@ -81,7 +81,12 @@ export default function Projects() {
           />
         </div>
       </div>
-      <div className="projects-container" aria-live="polite">
+      <p className="sr-only" role="status">
+        {filteredProjects.length === projects.length
+          ? `Showing all ${projects.length} projects`
+          : `Showing ${filteredProjects.length} of ${projects.length} projects`}
+      </p>
+      <div className="projects-container">
         {filteredProjects.map((project) => (
           <Project
             key={project.url}

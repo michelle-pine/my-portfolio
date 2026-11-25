@@ -41,6 +41,9 @@ describe('App', () => {
     const titles = screen.getAllByRole('heading', { level: 3 }).map((c) => c.textContent);
     const expected = projects.filter((p) => p.type.includes('professional')).map((p) => p.title);
     expect(titles).toEqual(expected);
+    expect(screen.getByRole('status')).toHaveTextContent(
+      `Showing ${expected.length} of ${projects.length} projects`
+    );
   });
 
   it('links to the resume from the navbar', () => {
