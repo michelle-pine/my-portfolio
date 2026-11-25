@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@use '../../styles/variables' as *;
 
 .header {
   width: 100vw;
@@ -48,7 +48,6 @@
 
     &:hover, &:active, &:focus{
       color: $yellow;
-      outline: none;
     }
   }
 }

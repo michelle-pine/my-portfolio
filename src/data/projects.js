@@ -1,3 +1,4 @@
+import caseStudies from './caseStudies';
 import WritingSamplesImg from '../media/project-media/advanced-writing.svg';
 import C3POR3Img from '../media/project-media/c3po.png';
 import CardiacFitnessImg from '../media/project-media/cf.png';
@@ -45,6 +46,7 @@ import {
 } from '../projects'
 
 const projects = [
+  ...caseStudies,
   {
     title: "Accessible Front-End Dev",
     description: "A textbook-style written guide on how to develop accessible front-end HTML and CSS.",

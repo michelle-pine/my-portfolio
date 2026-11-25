@@ -5,7 +5,6 @@ import Skills from './Skills';
 import LockedProject from './LockedProject';
 import BigLink from './BigLink';
 import BackButton from './BackButton';
-import ExternalLink from './ExternalLink';
 import Project from './Project';
 import Footer from './Footer';
 import Title from './Title';
@@ -20,7 +19,6 @@ export {
 	LockedProject,
 	BigLink,
 	BackButton,
-	ExternalLink,
 	Project,
 	Footer,
 	Title,

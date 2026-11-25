@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@use '../../styles/variables' as *;
 
 .big-link {
   @include transition;
@@ -27,8 +27,11 @@
     min-width: 0px;
     width: 100%;
     color: $yellow;
-    font-size: 30px;
-    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: $display-font;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
     display: flex;
     align-items: center;
     padding-left: 15px;
@@ -43,7 +46,6 @@
   }
   &.unlocked:hover, &.unlocked:focus {
     background: $dark-purple;
-    outline: none;
     cursor: pointer;
     .big-link-icon {
       font-size: 65px;

@@ -1,0 +1,63 @@
+@use 'sass:math';
+@use 'sass:string';
+
+$turquoise: #5DE8E5;
+$pink: #F44D9B;
+$magenta: #E9275B;
+$dark-purple: #392270;
+$darkest-purple: #01082d;
+$almost-black: rgb(1, 4, 19);
+$yellow: #ffff66;
+$purple: #5736A7;
+$light-purple: #7A11FF;
+$white: #FFF;
+$border-width: 2px;
+
+@mixin transition {
+  // Focus outlines should appear instantly rather than fade in.
+  transition: 0.3s all, outline 0s, outline-offset 0s;
+}
+
+@mixin no-bullet {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style-type: none;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+// Fonts are loaded in index.html. Change them here to try a different typeface.
+// $font-stack: interface text (navigation, card titles, buttons). Inter Tight is
+//   a variable font (100–900 + italics), so any font-weight value works.
+// $body-font: paragraphs and descriptions (Inter Tight, at the lighter $body-weight).
+// $display-font: page titles and big link buttons. Datatype is variable
+//   (weight 100–900, width 75–100%).
+$font-stack: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
+$body-font: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
+$display-font: 'Datatype', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+@mixin shadow {
+  box-shadow: 0px 8px 15px rgba(1, 4, 19, 0.5);
+}
+
+@function multiple-box-shadow ($n) {
+  $value: '#{math.random(2000)}px #{math.random(2000)}px #FFFF66';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{math.random(2000)}px #{math.random(2000)}px #FFFF66';
+  }
+  @return string.unquote($value);
+}
+
+// The sun behind the name, used by the header logo and the navbar logo.
+@mixin sun-gradient {
+  background: linear-gradient(to bottom, #ffac2a 0%, #ffbf38 28%, #fff15c 86%, $yellow 100%);
+}
+
+// Paragraph text. A light weight keeps long passages from looking heavy;
+// Inter Tight is variable, so any value from 100 to 900 works.
+$body-weight: 300;
+@mixin body-text {
+  font-family: $body-font;
+  font-weight: $body-weight;
+}

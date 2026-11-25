@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@use '../../styles/variables' as *;
 
 
 .projects-page {
@@ -27,7 +27,7 @@
     .info-description {
       margin-left: 25px;
       min-width: 0px;
-      font-family: 'Open Sans', sans-serif;
+      @include body-text;
     }
     @media screen and (max-width: 900px) {
       width: calc(100% - 30px);
@@ -78,10 +78,9 @@
         
         &:focus, &:hover {
           border: $border-width solid $light-purple;
-          outline: none;
           background-color: $purple;
           + .search-icon {
-            color: $light-purple;
+            color: $yellow;
           }
         }
         + .search-icon {
@@ -115,98 +114,32 @@
       width: 100%;
       max-width: 200px;
     }
-    .dropdown { 
-      @include transition;
-      .dropdown-heading {
-        background-color: $dark-purple!important;
-        font-weight: 500;
-        border-radius: 25px!important;
-        color: $yellow!important;
-        display: flex;
-        align-items: center;
-        border-color: $purple!important;
-        border-width: $border-width!important;
-        @include transition;
-        text-transform: lowercase;
-  
-        .dropdown-heading-value {
-          color: $white!important;
-          text-transform: lo;
-        }
-      }
-  
-      .dropdown-content {
-        @include transition;
-        background-color: $dark-purple!important;
-        font-weight: 400;
-        border-radius: 10px!important;
-        color: $yellow!important;
-        border-color: $purple!important;
-        border-width: $border-width!important;
-        margin-top: 5px!important;
-  
-        .select-item {
-          background-color: $dark-purple!important;
-          font-weight: 400;
-          color: $white!important;
-          @include transition;
-          text-transform: lowercase!important;
-          border-color: $purple!important;
-          border-width: $border-width!important;
-          input[type="checkbox"] {
-            visibility: hidden;
-            font-size: 1px;
-            &::after {
-              @include transition;
-            }
-            &:checked {
-              &::after{
-                visibility: visible!important;
-                content: "✔";
-                color: $yellow;
-                font-size: 12px;
-              }
-            }
-          }
-          &:hover, &:focus {
-            background-color: $purple!important;
-            color: $white!important;
-            border-color: $light-purple!important;
-          }
-        }
-      }
-      &:hover, &:focus {
-        .dropdown-heading {
-          background-color: $purple!important;
-          color: $white!important;
-          border-color: $light-purple!important;
-        }
-      }
-    }
     @media screen and (max-width: 450px) {
-      display: none;
-      // flex-direction: column;
-      // margin: 15px 0px;
-      // width: 100%;
-      // padding: 0px;
-      // .year-filter {
-      //   width: calc(100% - 3px);
-      //   max-width: none;
-      //   margin-bottom: 15px;
-      //   margin-right: 0px;
-      // }
-      // .type-filter {
-      //   width: calc(100% - 3px);
-      //   max-width: none;
-      // }
-      // .dropdown .dropdown-heading {
-      //   border-radius: 0px!important;
-      // }
+      flex-direction: column;
+      margin: 15px 0px;
+      padding: 0px 15px;
+      box-sizing: border-box;
+      gap: 10px;
+      .searchbox,
+      .year-filter,
+      .type-filter {
+        max-width: none;
+        margin: 0;
+      }
+      .searchbox #search-box {
+        border-radius: 25px;
+      }
     }
   }
   .projects-container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    .projects-empty {
+      width: 100%;
+      text-align: center;
+      @include body-text;
+    }
     .project {
       width: calc(50% - 15px);
       margin: 7.5px;

@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@use '../../styles/variables' as *;
 
 .project {
   display: flex;
@@ -40,10 +40,12 @@
       word-wrap: break-word; 
     }
     .project-description {
-      font-family: 'Open Sans', sans-serif;
+      @include body-text;
     }
     .project-title {
-      font-weight: 500;
+      font-family: $display-font;
+      font-weight: 600;
+      letter-spacing: 0.02em;
       margin-top: 30px;
       color: $yellow!important;
     }
@@ -81,7 +83,6 @@
   }
 
   &:hover, &:focus {
-    outline: none;
     .project-image {
       background-size: 110%;
       border-color: $purple;
@@ -143,4 +144,11 @@
       }
     }
   }
+}
+// Generated covers have no fixed aspect ratio: they scale to cover whatever
+// box the card gives them (square on desktop, circle on mobile).
+.project .project-image.project-image--fill,
+.project:hover .project-image.project-image--fill,
+.project:focus .project-image.project-image--fill {
+  background-size: cover !important;
 }
