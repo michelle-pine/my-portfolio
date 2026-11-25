@@ -1,26 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import './{{pascalCase name}}.scss';
 
-class {{pascalCase name}} extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+export default function {{pascalCase name}}() {
+  return <div className="{{kebabCase name}}"></div>;
+}
 
-  render() {
-    return (
-    <div>
-    </div>
-    );
-  }
-};
-
-{{pascalCase name}}.defaultProps = {
-
-};
-
-{{pascalCase name}}.propTypes = {
-
-};
-
-export default {{pascalCase name}};
+{{pascalCase name}}.propTypes = {};

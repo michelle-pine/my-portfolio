@@ -1,11 +1,22 @@
-@import '../../index.scss';
+@use '../../styles/variables' as *;
 
 .about-page {
+  .about-resume {
+    margin-top: 25px;
+    @media screen and (max-width: 900px) {
+      margin-top: 0;
+      .big-link {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
   .about-bio {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+    @include body-text;
     max-width: 700px;
     margin: 0 auto;
     background: $dark-purple;
@@ -15,10 +26,11 @@
     a {
       color: $yellow;
       @include transition;
-      text-decoration: none;
+      text-decoration: underline;
+      text-underline-offset: 3px;
 
       &:hover, &:focus {
-        text-decoration: underline;
+        text-decoration-thickness: 2px;
       }
     }
     .about-bio-image {
@@ -61,7 +73,11 @@
         margin-right: 15px;
       }
       margin-bottom: 15px;
-      
+      &:last-child:nth-child(odd) {
+        width: 100%;
+        margin-right: 0;
+      }
+
 
     }
     @media screen and (max-width: 800px){

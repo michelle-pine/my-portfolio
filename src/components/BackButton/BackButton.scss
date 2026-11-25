@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@use '../../styles/variables' as *;
 
 .back-button {
   display: block;
@@ -7,7 +7,6 @@
   left: 20px;
   margin-left: 115px;
   border: none;
-  outline: none;
   font-family: $font-stack;
   font-size: 14px;
   background: $dark-purple;
@@ -29,5 +28,12 @@
     margin: 0 auto;
     left: 0;
     text-align: center;
+  }
+}
+
+// Keep long page titles from running underneath the absolutely positioned button.
+@media screen and (min-width: 926px) {
+  .back-button + .title {
+    padding: 0 220px;
   }
 }

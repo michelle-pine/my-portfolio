@@ -1,0 +1,105 @@
+@use '../../styles/variables' as *;
+
+.multi-select {
+  position: relative;
+  text-align: left;
+
+  .multi-select-heading {
+    @include filter-control;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $filter-placeholder;
+    cursor: pointer;
+
+    &.has-value {
+      color: $white;
+    }
+    .multi-select-value {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    i {
+      @include filter-icon;
+    }
+    &:hover,
+    &:focus-visible,
+    &[aria-expanded='true'] {
+      @include filter-control-active;
+    }
+  }
+
+  .multi-select-content {
+    position: absolute;
+    z-index: 10;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 5px 0;
+    background-color: $dark-purple;
+    border: $border-width solid $purple;
+    border-radius: 10px;
+    @include shadow;
+  }
+
+  .multi-select-item {
+    @include transition;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 15px;
+    font-family: $display-font;
+    letter-spacing: 0.03em;
+    color: $white;
+    text-transform: lowercase;
+    cursor: pointer;
+
+    // The real checkbox stays in the page for keyboard and screen readers but
+    // is visually hidden; the sibling .multi-select-box draws it. (Pseudo-
+    // elements on <input> only render in Chromium, so they can't be used.)
+    .multi-select-input {
+      position: absolute;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+      margin: 0;
+    }
+    .multi-select-box {
+      flex-shrink: 0;
+      position: relative;
+      width: 16px;
+      height: 16px;
+      box-sizing: border-box;
+      border: $border-width solid $light-purple;
+      border-radius: 4px;
+      background: $darkest-purple;
+    }
+    // Checkmark: a rotated L drawn with borders.
+    .multi-select-input:checked + .multi-select-box {
+      background: $yellow;
+      border-color: $yellow;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 0px;
+        width: 4px;
+        height: 8px;
+        border: solid $darkest-purple;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+    .multi-select-input:focus-visible + .multi-select-box {
+      outline: 3px solid $yellow;
+      outline-offset: 2px;
+    }
+    &:hover,
+    &:focus-within {
+      background-color: $purple;
+    }
+  }
+}

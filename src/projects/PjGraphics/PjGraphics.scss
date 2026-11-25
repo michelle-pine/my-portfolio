@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@use '../../styles/variables' as *;
 
 .pj-graphics {
   .graphics-container {
@@ -18,7 +18,6 @@
       overflow: hidden;
       box-sizing: border-box;
       &:hover, &:focus {
-        outline: none;
         cursor: zoom-in;
         border: $border-width solid $purple;
         background-size: 120%;

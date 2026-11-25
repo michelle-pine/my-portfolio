@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@use '../../styles/variables' as *;
 
 .writing-samples {
   .writing-sample-links {
@@ -31,12 +31,14 @@
         min-width: 0px;
         width: 100%;
         .writing-title {
+          // Was an h4; keep its original size and spacing.
+          margin: 1.33em 0;
+          font-size: 1em;
           padding: 10px 10px 0px 10px;
           color: $yellow;
         }
         .writing-description {
-          font-family: 'Open Sans', sans-serif;
-          font-family: 12px;
+          @include body-text;
           padding: 0px 10px 10px 10px;
         }
       }

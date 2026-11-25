@@ -1,11 +1,13 @@
-@import '../../index.scss';
+@use '../../styles/variables' as *;
 
 .title {
-  font-family: 'Nanum Pen Script', sans-serif;
-  font-weight: 500;
+  font-family: $display-font;
+  font-weight: 600;
   font-style: normal;
   text-align: center;
-  font-size: 3em;
+  // Monospace runs much wider than the old handwritten font, so it's set smaller.
+  font-size: 2em;
+  letter-spacing: 0.04em;
   color: $yellow;
   text-transform: uppercase;
 }
