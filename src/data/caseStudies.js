@@ -1,7 +1,8 @@
 import CaseStudy from '../projects/CaseStudy';
 import DesignSystemImg from '../media/project-media/case-studies/design-system.svg';
 import HubSpotBeforeAfterImg from '../media/project-media/hubspot/redesign-before-after.jpg';
-import DataModelImg from '../media/project-media/case-studies/data-model.svg';
+import DataModelCoverImg from '../media/project-media/data-model/cover.webp';
+import DataModelOverviewImg from '../media/project-media/data-model/overview.webp';
 import EmailEditorImg from '../media/project-media/case-studies/email-editor.svg';
 import BookBubHomeImg from '../media/project-media/bookbub/home.webp';
 import BookBubBookPageImg from '../media/project-media/bookbub/book-page.webp';
@@ -72,9 +73,9 @@ const caseStudies = [
     url: 'data-model-visualizer',
     year: 2023,
     type: ['professional', 'coding', 'design'],
-    image: DataModelImg,
+    image: DataModelCoverImg,
     description:
-      'Interactive web applications for visualizing, monitoring, and configuring customer data models, built with React, TypeScript, ReactFlow, Apollo, and GraphQL.',
+      "Interactive web applications for visualizing, monitoring, and configuring customer data models, which grew into HubSpot's data model manager.",
     tags: ['reactflow', 'graphql', 'apollo', 'react', 'typescript', 'hubspot'],
     caseStudy: {
       organization: 'HubSpot',
@@ -90,7 +91,37 @@ const caseStudies = [
         'Established team best practices for reliability, frontend performance, and accessibility.',
         'Mentored engineers within and across teams, directly supporting teammate promotions.',
       ],
+      sections: [
+        {
+          heading: 'Where it is today',
+          intro:
+            "The data model overview has since grown into HubSpot's full data model manager (Data Management > Data Model), available on all HubSpot plans:",
+          items: [
+            'Graph and table views of every object and how they connect, with show/hide filters for object groups and export of the data model as an image.',
+            'Object details for properties, property groups, associations and labels, and conditional logic.',
+            'Creating and editing custom properties, custom objects, associations, association labels, and association limits, plus activating or deactivating objects and associations.',
+            'An Analysis tab charting how records are created, updated, deleted, and merged over time, and a Limits tab for usage limits.',
+            'AI assistance: data model recommendations from a plain-language description, and Breeze Assistant for creating properties, objects, and association labels.',
+          ],
+        },
+      ],
       stack: ['React', 'TypeScript', 'ReactFlow', 'Apollo Client', 'GraphQL', 'React Testing Library'],
+      hero: {
+        caption: 'An early version of the data model overview.',
+        src: DataModelOverviewImg,
+        alt: "HubSpot's Data model overview page, opened from Reporting > Data Management > Data Model. It shows zoom controls and groups of object cards (CRM objects, custom objects, and activities), each with a record count and a View Details button.",
+      },
+      links: [
+        {
+          to: 'https://knowledge.hubspot.com/data-management/manage-your-data-model',
+          text: 'HubSpot Knowledge Base: Manage your data model',
+          icon: 'fa-book',
+        },
+      ],
+      note: {
+        icon: 'fa-lock',
+        text: "The source code is proprietary; the screenshot above shows the shipped feature in HubSpot. I'm happy to walk through the work in more detail.",
+      },
     },
   },
   {

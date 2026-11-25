@@ -20,6 +20,7 @@ export default function CaseStudy({ caseStudy }) {
     gallery = [],
     links = [],
     quote,
+    sections = [],
     note = DEFAULT_NOTE,
   } = caseStudy;
 
@@ -28,6 +29,7 @@ export default function CaseStudy({ caseStudy }) {
       <BackButton />
       <Title title={`${title} (${year})`} overrideTitle={title} />
       {hero ? (
+        <figure className="case-study-hero-figure">
         <a
           href={hero.src}
           target="_blank"
@@ -36,6 +38,8 @@ export default function CaseStudy({ caseStudy }) {
         >
           <img src={hero.src} alt={hero.alt} />
         </a>
+        {hero.caption && <figcaption>{hero.caption}</figcaption>}
+        </figure>
       ) : (
         <div className="page-image-wrapper no-zoom">
           <img src={image} alt="" />
@@ -75,6 +79,17 @@ export default function CaseStudy({ caseStudy }) {
             <li key={item}>{item}</li>
           ))}
         </ul>
+        {sections.map(({ heading, intro, items }) => (
+          <section key={heading} aria-label={heading}>
+            <h3>{heading}</h3>
+            {intro && <p>{intro}</p>}
+            <ul>
+              {items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+        ))}
         <h3>Tools &amp; technologies</h3>
         <ul className="case-study-stack">
           {stack.map((item) => (
@@ -130,7 +145,18 @@ CaseStudy.propTypes = {
     summary: PropTypes.arrayOf(PropTypes.string).isRequired,
     highlights: PropTypes.arrayOf(PropTypes.string).isRequired,
     image: PropTypes.string.isRequired,
-    hero: PropTypes.shape({ src: PropTypes.string.isRequired, alt: PropTypes.string.isRequired }),
+    hero: PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+      caption: PropTypes.string,
+    }),
+    sections: PropTypes.arrayOf(
+      PropTypes.shape({
+        heading: PropTypes.string.isRequired,
+        intro: PropTypes.string,
+        items: PropTypes.arrayOf(PropTypes.string).isRequired,
+      })
+    ),
     gallery: PropTypes.arrayOf(
       PropTypes.shape({
         src: PropTypes.string.isRequired,
