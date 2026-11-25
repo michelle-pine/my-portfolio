@@ -1,8 +1,7 @@
 import CaseStudy from '../projects/CaseStudy';
 import DesignSystemImg from '../media/project-media/case-studies/design-system.svg';
-import AiMigrationsImg from '../media/project-media/case-studies/ai-migrations.svg';
+import HubSpotBeforeAfterImg from '../media/project-media/hubspot/redesign-before-after.jpg';
 import DataModelImg from '../media/project-media/case-studies/data-model.svg';
-import UpgradeFlowsImg from '../media/project-media/case-studies/upgrade-flows.svg';
 import EmailEditorImg from '../media/project-media/case-studies/email-editor.svg';
 import BookBubHomeImg from '../media/project-media/bookbub/home.webp';
 import BookBubBookPageImg from '../media/project-media/bookbub/book-page.webp';
@@ -43,6 +42,13 @@ const caseStudies = [
         'Partnered with principal designers and cross-functional engineering teams to architect and roll out modernized, accessible component libraries.',
       ],
       stack: ['React', 'TypeScript', 'Design Tokens', 'Codemods', 'WCAG', 'Figma'],
+      gallery: [
+        {
+          src: HubSpotBeforeAfterImg,
+          alt: "Side-by-side comparison of HubSpot's CRM: the classic theme with a contacts table and orange 'Add contacts' button, and the new theme with a lighter deals table and dark 'Add deals' button.",
+          caption: 'Before and after: the classic theme and the new theme built on the token-based design system. Image: Eye-Able.',
+        },
+      ],
       links: [
         {
           to: 'https://community.hubspot.com/t/hubspots-new-design-brings-your-work-into-focus/151517',
@@ -55,32 +61,10 @@ const caseStudies = [
           icon: 'fa-newspaper-o',
         },
       ],
-    },
-  },
-  {
-    title: 'AI-Assisted Migration Tooling',
-    url: 'ai-assisted-migrations',
-    year: 2025,
-    type: ['professional', 'coding'],
-    image: AiMigrationsImg,
-    description:
-      'Custom Claude Skills and agent workflows that automate and accelerate large-scale component migrations and design system prototyping.',
-    tags: ['claude', 'claude skills', 'conductor', 'ai', 'codemods', 'hubspot'],
-    caseStudy: {
-      organization: 'HubSpot',
-      role: 'Frontend Technical Lead II – Design System',
-      timeline: 'Oct 2025 – Present',
-      summary: [
-        'To support a migration spanning hundreds of components and thousands of applications, I authored custom Claude Skills and used Claude and Conductor to automate and accelerate the work.',
-        'Beyond the migration itself, I use these workflows to research and prototype complex design system architectures before committing to them.',
-      ],
-      highlights: [
-        'Authored numerous custom Claude Skills that encode migration patterns and design system conventions.',
-        'Used Claude and Conductor to automate and accelerate large-scale component migrations.',
-        'Combined AI-assisted code generation with codemods to move migrations forward across the codebase.',
-        'Researched and prototyped complex design system architectures.',
-      ],
-      stack: ['Claude', 'Claude Skills', 'Conductor', 'Codemods', 'TypeScript'],
+      note: {
+        icon: 'fa-lock',
+        text: "The source code is proprietary; the screenshot above is from public coverage of the redesign. I'm happy to walk through the work in more detail.",
+      },
     },
   },
   {
@@ -107,32 +91,6 @@ const caseStudies = [
         'Mentored engineers within and across teams, directly supporting teammate promotions.',
       ],
       stack: ['React', 'TypeScript', 'ReactFlow', 'Apollo Client', 'GraphQL', 'React Testing Library'],
-    },
-  },
-  {
-    title: 'In-App Upgrade Flows',
-    url: 'in-app-upgrade-flows',
-    year: 2022,
-    type: ['professional', 'coding', 'design'],
-    image: UpgradeFlowsImg,
-    description:
-      'Strategically placed in-app upgrade experiences that generated an additional $160K in Monthly Recurring Revenue.',
-    tags: ['growth', 'performance', 'accessibility', 'react', 'hubspot'],
-    caseStudy: {
-      organization: 'HubSpot',
-      role: 'Senior Frontend Software Engineer',
-      timeline: 'Dec 2021 – Nov 2022',
-      summary: [
-        'I engineered strategically placed in-app upgrade flows that generated an additional $160K in Monthly Recurring Revenue.',
-        'During the same period I focused on making the apps faster and more accessible.',
-      ],
-      highlights: [
-        'Generated an additional $160K in Monthly Recurring Revenue (MRR).',
-        'Implemented JavaScript treeshaking, cutting many bundle sizes and load times by 50%.',
-        'Spearheaded cross-library refactors that achieved near-complete screen reader accessibility across team-owned applications.',
-        'Wrote documentation of new and legacy systems to streamline onboarding.',
-      ],
-      stack: ['React', 'JavaScript', 'Webpack', 'Treeshaking', 'WCAG / Screen Readers'],
     },
   },
   {
