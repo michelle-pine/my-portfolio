@@ -82,6 +82,29 @@
     }
   }
 
+  .case-study-gallery {
+    max-width: 734px;
+    margin: 0 auto;
+    figure {
+      margin: 0 0 25px;
+    }
+    .page-image-wrapper {
+      margin-bottom: 8px;
+    }
+    figcaption {
+      @include body-text;
+      text-align: center;
+      font-size: 13px;
+      color: rgb(189, 189, 189);
+      padding: 0 15px;
+    }
+    @media screen and (max-width: 900px) {
+      figure {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
   .case-study-note i {
     color: $yellow;
     margin-right: 4px;

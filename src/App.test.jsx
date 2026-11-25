@@ -72,6 +72,17 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: 'Highlights' })).toBeInTheDocument();
   });
 
+  it('renders the BookBub screenshot gallery and site link', () => {
+    renderAt('/projects/bookbub-component-library');
+    const gallery = screen.getByRole('region', { name: /screenshots/i });
+    expect(within(gallery).getAllByRole('img')).toHaveLength(3);
+    expect(screen.getByRole('link', { name: /visit bookbub/i })).toHaveAttribute(
+      'href',
+      'https://www.bookbub.com'
+    );
+    expect(screen.queryByText(/proprietary work/i)).not.toBeInTheDocument();
+  });
+
   it('shows the not-found page for unknown routes', () => {
     renderAt('/nope');
     expect(screen.getByText(/This page is not found/)).toBeInTheDocument();

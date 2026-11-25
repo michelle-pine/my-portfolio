@@ -5,6 +5,9 @@ import DataModelImg from '../media/project-media/case-studies/data-model.svg';
 import UpgradeFlowsImg from '../media/project-media/case-studies/upgrade-flows.svg';
 import EmailEditorImg from '../media/project-media/case-studies/email-editor.svg';
 import ComponentLibraryImg from '../media/project-media/case-studies/component-library.svg';
+import BookBubHomeImg from '../media/project-media/bookbub/home.webp';
+import BookBubBookPageImg from '../media/project-media/bookbub/book-page.webp';
+import BookBubDealsImg from '../media/project-media/bookbub/deals.webp';
 
 // Professional work, shown as case studies. Each entry renders with the shared
 // CaseStudy page, so adding one only requires data and a cover image.
@@ -144,21 +147,45 @@ const caseStudies = [
     type: ['professional', 'coding', 'design'],
     image: ComponentLibraryImg,
     description:
-      'A reusable UI component library built to internal design specifications and web accessibility standards.',
-    tags: ['component library', 'accessibility', 'react', 'ruby on rails', 'postgresql', 'bookbub'],
+      'The reusable, accessible UI component library that makes up the BookBub website, built to internal design specifications.',
+    tags: ['component library', 'design system', 'accessibility', 'react', 'ruby on rails', 'postgresql', 'bookbub'],
     caseStudy: {
       organization: 'BookBub',
       role: 'Full-Stack Software Engineering Co-op',
       timeline: 'Jan 2019 – Dec 2019',
       summary: [
-        "At BookBub, I built a reusable UI component library that adhered strictly to the company's design specifications and web accessibility standards, and worked across the full stack.",
+        "At BookBub, our team built the reusable UI component library that makes up the BookBub website. Every page is assembled from these shared pieces: navigation and search, category filters, deal cards, book pages, and sidebar panels.",
+        "The components adhere strictly to BookBub's design specifications and web accessibility standards, so pages stay visually consistent and usable as the site grows. Alongside the library, I worked across the full stack.",
       ],
       highlights: [
-        'Built a reusable, accessible UI component library to internal design specifications.',
+        'Built reusable, accessible UI components to internal design specifications.',
+        'Components are shared across the site: headers, search, filter pills, deal cards, book detail layouts, buttons, and sidebar panels.',
         'Developed and extended full-stack web features using React, Ruby on Rails, and PostgreSQL.',
         'Engineered dynamic mass-marketing email templates powered by a Clojure templating system and internal REST APIs.',
       ],
-      stack: ['React', 'Ruby on Rails', 'PostgreSQL', 'Clojure', 'REST APIs'],
+      stack: ['React', 'Ruby on Rails', 'PostgreSQL', 'Clojure', 'REST APIs', 'WCAG'],
+      gallery: [
+        {
+          src: BookBubHomeImg,
+          alt: 'BookBub home page with a navigation header, three featured deal collections, category filter pills, and a wishlist sidebar.',
+          caption: 'Home page: header and search, featured collections, category filters, and the wishlist panel.',
+        },
+        {
+          src: BookBubDealsImg,
+          alt: 'Grid of discounted book deal cards with covers, titles, authors, genres, and prices, beside wishlist and followed-author panels.',
+          caption: 'Deal cards in a responsive grid, alongside the wishlist and "My Authors" sidebar panels.',
+        },
+        {
+          src: BookBubBookPageImg,
+          alt: 'A book detail page showing the cover, title, authors, star rating, description, a deal price card, and wishlist, review, and share actions.',
+          caption: 'Book page: cover, ratings, description, deal pricing, and wishlist, review, and share actions.',
+        },
+      ],
+      links: [{ to: 'https://www.bookbub.com', text: 'Visit BookBub', icon: 'fa-globe' }],
+      note: {
+        icon: 'fa-info-circle',
+        text: "Screenshots are from the live BookBub site. I'm happy to talk through how the component library was built.",
+      },
     },
   },
 ].map((study) => ({
